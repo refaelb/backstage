@@ -1,14 +1,12 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: refael
-  description: The place to be, for great artists
+  name: bacstage
+  title: test # optional, human readable component name
+  description: My first Backstage catalog item.
+  annotations:
+    github.com/project-slug: refaelb/backstage
 spec:
-  type: website
-  lifecycle: production
-  owner: artist-relations-team
-  system: artist-engagement-portal
-  dependsOn:
-    - resource:default/artists-db
-  providesApis:
-    - artist-api
+  type: service
+  owner: user:refaelb
+  lifecycle: experimental
