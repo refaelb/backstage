@@ -13,7 +13,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: artist-web
+  name: refael
   description: The place to be, for great artists
   labels:
     example.com/custom: custom_label_value
