@@ -1,18 +1,6 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-<<<<<<< HEAD
-  name: leumi
-  description: An example of a Backstage application.
-  # Example for optional annotations
-  annotations:
-    github.com/project-slug: refaelb/backstage
-    # bitbucket.com/project-slug: matrixdevopsbackstage/backstage
-    backstage.io/techdocs-ref: dir:.
-spec:
-  type: website
-  owner: john@example.com
-=======
   name: node
   description: An example of a Backstage application.
   # Example for optional annotations
@@ -22,5 +10,4 @@ spec:
 spec:
   type: website
   owner: admin@company.com
->>>>>>> 718ed6a (add catalog-info & app-config.yaml)
   lifecycle: experimental
