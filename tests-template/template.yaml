@@ -62,7 +62,7 @@ spec:
       name: Publish
       action: publish:bitbucket
       input:
-        allowedHosts: ['bitbucket.org']
+        allowedHosts: ['github.com']
         description: This is ${{ parameters.name }}
         repoUrl: ${{ parameters.repoUrl }}
 
