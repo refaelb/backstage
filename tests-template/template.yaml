@@ -60,7 +60,7 @@ spec:
 
     - id: publish
       name: Publish
-      action: publish:bitbucketCloud
+      action: publish:bitbucket
       input:
         allowedHosts: ['bitbucket.org']
         description: This is ${{ parameters.name }}
