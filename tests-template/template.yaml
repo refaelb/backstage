@@ -33,8 +33,8 @@ spec:
           ui:field: RepoUrlPicker
           ui:options:
             allowedHosts:
-              - github.com
-             
+#              - github.com
+               - bitbucket.org            
 
   # These steps are executed in the scaffolder backend, using data that we gathered
   # via the parameters above.
@@ -60,9 +60,9 @@ spec:
 
     - id: publish
       name: Publish
-      action: publish:github
+      action: publish:bitbucket
       input:
-        allowedHosts: ['github.com']
+        allowedHosts: ['bitbucket.org']
         description: This is ${{ parameters.name }}
         repoUrl: ${{ parameters.repoUrl }}
 
