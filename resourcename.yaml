@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: refael
+  # region: q
+  description: q
+spec:
+  type: q
+  owner: q
+  system: morgage
