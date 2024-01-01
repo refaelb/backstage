@@ -1,7 +1,7 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:recommended", ":rebaseStalePrs"],
-  "schedule": ["every 1 hour"],
+  "schedule": ["every weekend"],
   "prBodyNotes": [
     "Test plan: CI should pass with updated dependencies. No review required: this is an automated dependency update PR."
   ],
