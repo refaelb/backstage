@@ -8,6 +8,7 @@
   "prBodyNotes": [
     "Test plan: CI should pass with updated dependencies. No review required: this is an automated dependency update PR."
   ],
+  "baseBranches": ["renovatebot-branche"],
   "prBodyColumns": ["Package", "Type", "Update", "New value", "References", "Sourcegraph"],
   "masterIssue": true,
   "updateNotScheduled": true,
