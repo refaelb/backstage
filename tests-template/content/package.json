@@ -49,7 +49,7 @@
 
 
     "protobufjs" : "7.2.5",
-    "@babel/traverse" : "7.23.2"
+    "@babel/traverse" : "7.23.7"
   },
   "prettier": "@spotify/prettier-config",
   "lint-staged": {
