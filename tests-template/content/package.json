@@ -40,8 +40,8 @@
   },
 
   "resolutions": {
-    "@types/react": "^17",
-    "@types/react-dom": "^17",
+    "@types/react": "^17.0.74",
+    "@types/react-dom": "^17.0.25",
     "parse-path": "5.0.0",
     "parse-url": "8.1.0",
     "tough-cookie": "4.1.3",
