@@ -6,25 +6,6 @@
     "Test plan: CI should pass with updated dependencies. No review required: this is an automated dependency update PR."
   ],
   "baseBranches": ["renovatebot-branche"],
-  "prBodyColumns": ["Package", "Type", "Update", "New value", "References", "Sourcegraph"],
-  "masterIssue": true,
-  "updateNotScheduled": true,
-  "prCreation": "immediate",
-  "prHourlyLimit": 10,
-  "prConcurrentLimit": 50,
-  "rangeStrategy": "bump",
-  "postUpdateOptions": ["yarnDedupeFewer"],
-  "docker": {
-    "assignees": [],
-    "pinDigests": true,
-    "major": {
-      "enabled": true
-    }
-  },
-  "labels": ["bot"],
-  "npm": {
-    "labels": ["npm", "bot"]
-  },
   "packageRules": [
     {
       "description": "Automatically merge minor and patch-level updates",
