@@ -1,17 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [":rebaseStalePrs"],
-  "schedule": ["on the 1st through 7th day of the month"],
-  "prBodyNotes": [
-    "Test plan: CI should pass with updated dependencies. No review required: this is an automated dependency update PR."
-  ],
-  "baseBranches": ["renovatebot-branch"],
-  "packageRules": [
-    {
-      "description": "Automatically merge minor and patch-level updates",
-      "matchUpdateTypes": ["minor", "patch", "digest"],
-      "automerge": true,
-      "automergeType": "pr"
-    }
-  ]
+  "extends": ["config:base"],
+  "prHourlyLimit": 3
+
 }
