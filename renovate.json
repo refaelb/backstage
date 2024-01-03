@@ -5,7 +5,12 @@
   "packageRules": [
     {
       "matchUpdateTypes": ["major"],
-      "dependencyDashboardApproval": true
+      "dependencyDashboardApproval": true,
+      "matchPackagePatterns": ["eslint"],
+      "groupName": "eslint",
+      "schedule": ["before 4am on monday"],
+      "automerge": true,
+      "automergeType": "branch"
     }
   ]
 
