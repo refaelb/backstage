@@ -4,7 +4,7 @@
   "prHourlyLimit": 3,
   "packageRules": [
     {
-      "matchUpdateTypes": ["major"],
+      "matchUpdateTypes": ["major", "minor", "patch"],
       "dependencyDashboardApproval": false,
       "matchPackagePatterns": ["*"],
       "groupName": "renovate",
@@ -13,5 +13,4 @@
       "automergeType": "pr"
     }
   ]
-
 }
