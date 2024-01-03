@@ -11,8 +11,10 @@
     {
       "description": "Automatically merge minor and patch-level updates",
       "matchUpdateTypes": ["minor", "patch", "digest"],
+      "groupName": "backstage-cli",
+      "schedule": ["before 4am on monday"],
       "automerge": true,
-      "automergeType": "pr"
+      "automergeType": "branch"
     }
   ]
 }
