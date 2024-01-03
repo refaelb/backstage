@@ -6,7 +6,10 @@
     {
       "matchUpdateTypes": ["major", "minor", "patch"],
 
-      "automerge": true,
+      "automerge": true,      "dependencyDashboardApproval": false,
+      "matchPackagePatterns": ["backstage"],
+      "groupName": "test",
+      "schedule": ["before 4am on monday"],
       "automergeType": "pr"
     }
   ]
