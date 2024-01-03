@@ -38,7 +38,7 @@
     "@internal/backstage-plugin-torque-backend": "^0.1.0",
     "@mdude2314/backstage-plugin-scaffolder-git-actions": "^1.1.0",
     "@roadiehq/scaffolder-backend-module-http-request": "^4.0.6",
-    "@roadiehq/scaffolder-backend-module-utils": "^1.10.1",
+    "@roadiehq/scaffolder-backend-module-utils": "^1.10.0",
     "app": "link:../app",
     "dockerode": "^3.3.1",
     "express": "^4.17.1",
