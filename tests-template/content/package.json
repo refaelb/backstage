@@ -42,8 +42,8 @@
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
     "parse-path": "7.0.0",
-    "parse-url": "9.0.0",
-    "tough-cookie": "4.0.3",
+    "parse-url": "8.0.0",
+    "tough-cookie": "4.0.2",
     "protobufjs" : "7.2.5",
     "@babel/traverse" : "7.23.7"
  
