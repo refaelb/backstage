@@ -6,10 +6,11 @@
     {
       "matchUpdateTypes": ["major"],
       "dependencyDashboardApproval": true,
-
+      "matchPackagePatterns": ["*"],
+      "groupName": "lerna",
       "schedule": ["before 4am on monday"],
       "automerge": true,
-      "automergeType": "pr"
+      "automergeType": "branch"
     }
   ]
 
