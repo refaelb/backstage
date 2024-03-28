@@ -11,6 +11,7 @@ blueprint:
 inputs:
   service-account: app-sa
   agent: demo-prod
+  test: value
 grains:
   lambda:
     source:
