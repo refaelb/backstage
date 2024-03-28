@@ -30,3 +30,9 @@ grains:
   new-grain-6:
     source:
       commit: default-commit
+  tests:
+    source:
+      commit: default-commit
+  api:
+    source:
+      commit: default-commit
