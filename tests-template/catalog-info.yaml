@@ -11,6 +11,7 @@ blueprint:
 inputs:
   rere: rere
   rt: yyyy
+  tr: '[32,43,54]'
 grains:
   configure-workstation:
     source:
