@@ -12,9 +12,9 @@ inputs:
   service-account: app-sa
   agent: demo-prod
 grains:
-  tests:
+  api:
     source:
       commit: default-commit
-  api:
+  tests:
     source:
       commit: default-commit
