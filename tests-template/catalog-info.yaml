@@ -11,8 +11,6 @@ blueprint:
 inputs:
   service-account: app-sa
   agent: demo-prod
-  create-ec2: configure-workstation
-  configure-workstation: configure-workstation
 grains:
   create-ec2:
     source:
