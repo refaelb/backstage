@@ -1,19 +1,20 @@
-apiVersion: backstage.io/v1alpha1
-kind: Component
-metadata:
-  name: test
-  description: Component description
-  links: []
-  tags: []
-  annotations: {}
-  system: devops
-  torqe:
-    inputs:
-      name: test
-    grains:
-      lambda.lambda:
-        commits: "122222222222"
-spec:
-  type: service
-  lifecycle: experimental
-  owner: owner
+kind: environment                               
+environment_name: "Event microservice Production"
+description: "Kubernetes based deployment of the event-ms optimized for production"
+state: active
+owner_email: user@quali.com
+blueprint:                                      
+  name: "test-workstation"
+  repository_name: "cloud-native-application"
+  branch: "main"
+  commit: "697d1a81fed31adf2eb9e75349def8245f80f87d"
+inputs:
+  service-account: "app-sa"
+  agent: "demo-prod"
+grains:
+  create-ec2:
+      source:
+        commit: 697d1a81fed31adf2eb9e75349def8245f80f87d
+  configure-workstation:
+      source:
+        commit: 697d1a81fed31adf2eb9e75349def8245f80f87d
