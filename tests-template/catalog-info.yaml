@@ -1,20 +1,22 @@
-kind: environment                               
-environment_name: "Event microservice Production"
-description: "Kubernetes based deployment of the event-ms optimized for production"
+kind: environment
+environment_name: Event microservice Production
+description: Kubernetes based deployment of the event-ms optimized for production
 state: active
 owner_email: user@quali.com
-blueprint:                                      
-  name: "test-workstation"
-  repository_name: "cloud-native-application"
-  branch: "main"
-  commit: "697d1a81fed31adf2eb9e75349def8245f80f87d"
+blueprint:
+  name: test-workstation
+  repository_name: cloud-native-application
+  branch: main
+  commit: 697d1a81fed31adf2eb9e75349def8245f80f87d
 inputs:
-  service-account: "app-sa"
-  agent: "demo-prod"
+  service-account: app-sa
+  agent: demo-prod
+  create-ec2: configure-workstation
+  configure-workstation: configure-workstation
 grains:
   create-ec2:
-      source:
-        commit: 697d1a81fed31adf2eb9e75349def8245f80f87d
+    source:
+      commit: configure-workstation
   configure-workstation:
-      source:
-        commit: 697d1a81fed31adf2eb9e75349def8245f80f87d
+    source:
+      commit: configure-workstation
