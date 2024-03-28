@@ -1,12 +1,19 @@
-name: test1
-description: Component description
-links: []
-tags: []
-annotations: {}
-system: devops
-torqe:
-  inputs:
-    name: testyael
-  grains:
-    lambda.lambda:
-      commits: '122222222223332'
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: test
+  description: Component description
+  links: []
+  tags: []
+  annotations: {}
+  system: devops
+  torqe:
+    inputs:
+      name: test
+    grains:
+      lambda.lambda:
+        commits: "122222222222"
+spec:
+  type: service
+  lifecycle: experimental
+  owner: owner
