@@ -25,3 +25,6 @@ grains:
   configure-workstation:
     source:
       commit: default-commit
+  tests:
+    source:
+      commit: default-commit
