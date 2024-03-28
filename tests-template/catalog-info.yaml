@@ -22,3 +22,6 @@ grains:
   create-ec2:
     source:
       commit: default-commit
+  configure-workstation:
+    source:
+      commit: default-commit
