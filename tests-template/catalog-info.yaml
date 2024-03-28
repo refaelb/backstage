@@ -21,3 +21,12 @@ grains:
   grain-undefined:
     source:
       commit: tests
+  new-grain-4:
+    source:
+      commit: default-commit
+  new-grain-5:
+    source:
+      commit: default-commit
+  new-grain-6:
+    source:
+      commit: default-commit
