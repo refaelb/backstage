@@ -14,7 +14,7 @@ inputs:
 grains:
   create-ec2:
     source:
-      commit: configure-workstation
+      commit: tests
   configure-workstation:
     source:
-      commit: configure-workstation
+      commit: api
