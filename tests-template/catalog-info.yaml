@@ -8,5 +8,9 @@ blueprint:
   repository_name: cloud-native-application
   branch: main
   commit: 697d1a81fed31adf2eb9e75349def8245f80f87d
-inputs: {}
-grains: {}
+inputs:
+  rere: rere
+grains:
+  configure-workstation:
+    source:
+      commit: default-commit
