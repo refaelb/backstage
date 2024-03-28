@@ -6,7 +6,7 @@ annotations: {}
 system: devops
 torqe:
   inputs:
-    name: testadi
+    name: testyael
   grains:
     lambda.lambda:
       commits: '122222222222'
