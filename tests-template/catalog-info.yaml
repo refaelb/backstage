@@ -12,24 +12,6 @@ inputs:
   service-account: app-sa
   agent: demo-prod
 grains:
-  create-ec2:
-    source:
-      commit: tests
-  configure-workstation:
-    source:
-      commit: tests
-  grain-undefined:
-    source:
-      commit: tests
-  new-grain-4:
-    source:
-      commit: default-commit
-  new-grain-5:
-    source:
-      commit: default-commit
-  new-grain-6:
-    source:
-      commit: default-commit
   tests:
     source:
       commit: default-commit
