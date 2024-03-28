@@ -8,25 +8,5 @@ blueprint:
   repository_name: cloud-native-application
   branch: main
   commit: 697d1a81fed31adf2eb9e75349def8245f80f87d
-inputs:
-  service-account: app-sa
-  agent: demo-prod
-  test: value
-  erre: rere
-  rere: rere
-grains:
-  lambda:
-    source:
-      commit: default-commit
-  api:
-    source:
-      commit: default-commit
-  create-ec2:
-    source:
-      commit: default-commit
-  configure-workstation:
-    source:
-      commit: default-commit
-  tests:
-    source:
-      commit: default-commit
+inputs: {}
+grains: {}
