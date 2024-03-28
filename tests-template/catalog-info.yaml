@@ -17,4 +17,7 @@ grains:
       commit: tests
   configure-workstation:
     source:
-      commit: api
+      commit: tests
+  grain-undefined:
+    source:
+      commit: default-commit
