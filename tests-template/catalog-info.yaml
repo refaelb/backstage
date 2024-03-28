@@ -12,9 +12,5 @@ inputs:
   service-account: app-sa
   agent: demo-prod
 grains:
-  create-ec2:
-    source:
-      commit: tests
-  configure-workstation:
-    source:
-      commit: tests
+  create-ec2: tests
+  configure-workstation: configure-workstation
