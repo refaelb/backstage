@@ -20,4 +20,4 @@ grains:
       commit: tests
   grain-undefined:
     source:
-      commit: default-commit
+      commit: tests
