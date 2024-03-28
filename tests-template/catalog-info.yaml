@@ -11,4 +11,13 @@ blueprint:
 inputs:
   service-account: app-sa
   agent: demo-prod
-grains: {}
+grains:
+  lambda:
+    source:
+      commit: default-commit
+  api:
+    source:
+      commit: default-commit
+  create-ec2:
+    source:
+      commit: default-commit
