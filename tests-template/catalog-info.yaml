@@ -11,10 +11,4 @@ blueprint:
 inputs:
   service-account: app-sa
   agent: demo-prod
-grains:
-  api:
-    source:
-      commit: default-commit
-  tests:
-    source:
-      commit: default-commit
+grains: {}
