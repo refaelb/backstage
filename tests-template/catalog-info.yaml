@@ -12,6 +12,8 @@ inputs:
   service-account: app-sa
   agent: demo-prod
   test: value
+  erre: rere
+  rere: rere
 grains:
   lambda:
     source:
