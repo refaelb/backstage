@@ -23,3 +23,6 @@ grains:
   api:
     source:
       commit: default-commit
+  lambda:
+    source:
+      commit: default-commit
