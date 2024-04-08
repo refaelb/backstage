@@ -10,12 +10,7 @@ blueprint:
   commit: 697d1a81fed31adf2eb9e75349def8245f80f87d
 inputs:
   '': ''
-  www: www
-  rere: rerere
 grains:
-  '':
-    source:
-      commit: default-commit
   Grain2:
     source:
       commit: default-commit
