@@ -9,6 +9,8 @@ blueprint:
   branch: main
   commit: 697d1a81fed31adf2eb9e75349def8245f80f87d
 inputs:
+  '': ''
+  רקכשקך: רקרק
 grains:
   Grain2:
     source:
