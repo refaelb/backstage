@@ -16,3 +16,6 @@ grains:
   '':
     source:
       commit: default-commit
+  Grain2:
+    source:
+      commit: default-commit
