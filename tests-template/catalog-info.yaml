@@ -11,6 +11,7 @@ blueprint:
 inputs:
   '': ''
   www: eeee
+  tt: tttt
 grains:
   Grain2:
     source:
