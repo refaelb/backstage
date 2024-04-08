@@ -11,4 +11,5 @@ blueprint:
 inputs:
   '': ''
   www: www
+  rere: rerere
 grains: {}
