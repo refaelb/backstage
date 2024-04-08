@@ -9,20 +9,5 @@ blueprint:
   branch: main
   commit: 697d1a81fed31adf2eb9e75349def8245f80f87d
 inputs:
-  rere: rere
-  rt: yyyy
-  tr: '[32,43,54]'
   '': ''
-grains:
-  configure-workstation:
-    source:
-      commit: default-commit
-  tests:
-    source:
-      commit: default-commit
-  api:
-    source:
-      commit: default-commit
-  lambda:
-    source:
-      commit: default-commit
+grains: {}
