@@ -12,4 +12,7 @@ inputs:
   '': ''
   www: www
   rere: rerere
-grains: {}
+grains:
+  '':
+    source:
+      commit: default-commit
