@@ -10,7 +10,6 @@ blueprint:
   commit: 697d1a81fed31adf2eb9e75349def8245f80f87d
 inputs:
   '333': '333'
-  '': ''
   www: eeee
   tt: tttt
 grains:
