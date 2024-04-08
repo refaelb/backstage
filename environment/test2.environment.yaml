@@ -1,0 +1,21 @@
+kind: environment
+environment_name: Event microservice Production
+description: Kubernetes based deployment of the event-ms optimized for production
+state: active
+owner_email: user@quali.com
+blueprint:
+  name: test-2
+  repository_name: cloud-native-application
+  branch: main
+  commit: 697d1a81fed31adf2eb9e75349def8245f80f87d
+inputs:
+  '333': '333'
+  www: eeee
+  tt: tttt
+grains:
+  Grain2:
+    source:
+      commit: default-commit
+  Grain1:
+    source:
+      commit: default-commit
