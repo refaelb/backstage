@@ -11,7 +11,7 @@ blueprint:
 inputs:
   '333': '333'
   www: eeee
-  tt: tttt
+  tt: ttttf
 grains:
   Grain2:
     source:
