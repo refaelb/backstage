@@ -18,3 +18,9 @@ grains:
   Grain1:
     source:
       commit: default-commit
+  test:
+    source:
+      commit: default-commit
+  lambda:
+    source:
+      commit: default-commit
