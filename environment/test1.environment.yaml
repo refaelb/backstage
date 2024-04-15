@@ -15,4 +15,5 @@ inputs:
 grains:
   Grain2:
     commit: default-commit
-  
+  Grain3:
+    commit: default-commit
