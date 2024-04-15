@@ -13,9 +13,5 @@ inputs:
   www: eeee
   tt: tttt
 grains:
-  Grain2:
-    commit: default-commit
-  S3-Webapp:
-    commit: default-commit
   KMS-Key:
     commit: default-commit
