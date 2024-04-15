@@ -15,5 +15,3 @@ inputs:
 grains:
   KMS-Key:
     commit: default-commit
-  S3-Webapp:
-    commit: default-commit
