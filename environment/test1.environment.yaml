@@ -17,5 +17,3 @@ grains:
     commit: default-commit
   Grain3:
     commit: default-commit
-  Grain1:
-    commit: default-commit
