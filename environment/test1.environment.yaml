@@ -13,15 +13,7 @@ inputs:
   www: eeee
   tt: tttt
 grains:
+  Grain3:
+    commit: default-commit
   Grain2:
-    source:
-      commit: default-commit
-  Grain1:
-    source:
-      commit: default-commit
-  test:
-    source:
-      commit: default-commit
-  lambda:
-    source:
-      commit: default-commit
+    commit: default-commit
