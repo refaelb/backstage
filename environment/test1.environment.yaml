@@ -15,3 +15,11 @@ inputs:
 grains:
   S3-Webapp:
     commit: default-commit
+  KMS-Key:
+    grainInputs:
+      inputs: |-
+        {
+          "name": "44",
+          "hase": "44",
+          "target": "55"
+        }
