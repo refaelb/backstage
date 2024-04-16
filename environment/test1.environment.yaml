@@ -12,13 +12,4 @@ inputs:
   '333': '333'
   www: eeee
   tt: tttt
-grains:
-  KMS-Key:
-    commit: default-commit
-    inputs:
-      inputs: |-
-        {
-          "name": "66",
-          "hase": "66",
-          "target": "66"
-        }
+grains: {}
