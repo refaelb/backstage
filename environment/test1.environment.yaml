@@ -26,3 +26,6 @@ grains:
       name: trtr
       sha256: trtr
       target: trtr
+  S3-Webapp:
+    source:
+      commit: default-commit
