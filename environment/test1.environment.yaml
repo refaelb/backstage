@@ -26,3 +26,9 @@ grains:
     inputs:
       name: qqq
       port: qqq
+  lambda:
+    source:
+      commit: default-commit
+    inputs:
+      name: test
+      apigee: test
