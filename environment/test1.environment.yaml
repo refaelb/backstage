@@ -19,3 +19,10 @@ grains:
     inputs:
       name: eee
       port: eee
+  KMS-Key:
+    source:
+      commit: default-commit
+    inputs:
+      name: rr
+      sha256: rrr
+      target: rrrr
