@@ -20,12 +20,3 @@ grains:
       name: namee
       sha256: ttt
       target: eeee
-  lambda:
-    source:
-      commit: f91427017aa816dbf5d26
-    inputs:
-      name: ttt
-      apigee: ttt
-  S3-Webapp:
-    source:
-      commit: default-commit
