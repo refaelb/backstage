@@ -20,6 +20,3 @@ grains:
       name: namee
       sha256: ttt
       target: eeee
-  lambda:
-    source:
-      commit: default-commit
