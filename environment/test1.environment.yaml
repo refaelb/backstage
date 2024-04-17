@@ -20,9 +20,3 @@ grains:
       name: rr
       sha256: rrr
       target: rrrr
-  lambda:
-    source:
-      commit: default-commit
-    inputs:
-      name: '554'
-      apigee: '554'
