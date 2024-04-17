@@ -26,3 +26,9 @@ grains:
       name: eee
       sha256: eee
       target: eee
+  S3-Webapp:
+    source:
+      commit: default-commit
+    inputs:
+      name: test
+      port: test
