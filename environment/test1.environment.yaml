@@ -24,3 +24,8 @@ grains:
     inputs:
       name: ee
       port: eee
+  lambda:
+    commit: default-commit
+    inputs:
+      name: hi
+      apigee: hh
