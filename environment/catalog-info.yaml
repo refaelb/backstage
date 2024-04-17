@@ -12,7 +12,7 @@ spec:
   providesApis: [torque-all-apis]
 ---
 apiVersion: leumi.io/v1alpha1
-kind: Environments
+kind: Environment
 state: active
 environment_name: Production Environment
 owner_email: amir.r@quali.com
