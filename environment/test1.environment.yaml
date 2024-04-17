@@ -26,3 +26,9 @@ grains:
       name: rerer
       sha256: eeee
       target: eeeee
+  S3-Webapp:
+    source:
+      commit: default-commit
+    inputs:
+      name: '444'
+      port: '444'
