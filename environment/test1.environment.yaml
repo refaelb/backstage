@@ -13,13 +13,6 @@ inputs:
   www: eeee
   tt: tttt
 grains:
-  KMS-Key:
-    source:
-      commit: default-commit
-    inputs:
-      name: '444'
-      sha256: '444'
-      target: '444'
   lambda:
     source:
       commit: default-commit
