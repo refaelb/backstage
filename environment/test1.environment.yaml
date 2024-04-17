@@ -21,8 +21,8 @@ grains:
       apigee: 'null'
   KMS-Key:
     source:
-      commit: default-commit
+      commit: f91427017aa816dbf5d267076d8c56e7da84a38a
     inputs:
-      name: rere
-      sha256: rere
-      target: rere
+      name: trtr
+      sha256: trtr
+      target: trtr
