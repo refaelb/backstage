@@ -24,3 +24,9 @@ grains:
       name: uu
       sha256: uu
       target: yyy
+  S3-Webapp:
+    source:
+      commit: default-commit
+    inputs:
+      name: eee
+      port: eee
