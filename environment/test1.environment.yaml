@@ -19,16 +19,3 @@ grains:
     inputs:
       name: name
       apigee: 'null'
-  KMS-Key:
-    source:
-      commit: f91427017aa816dbf5d267076d8c56e7da84a38a
-    inputs:
-      name: trtr
-      sha256: trtr
-      target: trtr
-  S3-Webapp:
-    source:
-      commit: default-commit
-    inputs:
-      name: string
-      port: number
