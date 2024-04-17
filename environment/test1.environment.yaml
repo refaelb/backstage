@@ -13,12 +13,6 @@ inputs:
   www: eeee
   tt: tttt
 grains:
-  S3-Webapp:
-    source:
-      commit: default-commit
-    inputs:
-      name: eee
-      port: eee
   KMS-Key:
     source:
       commit: default-commit
