@@ -20,6 +20,3 @@ grains:
       name: '333'
       sha256: '333'
       target: '333'
-  lambda:
-    source:
-      commit: default-commit
