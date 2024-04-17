@@ -29,16 +29,3 @@ grains:
     inputs:
       name: webapp-bucket
       port: 8080
-  KMS-Key:
-    source:
-      commit: f91427017aa816dbf5d267076d8c56e7da84a38a
-    inputs:
-      name: kms-key
-      hase: true
-      target: https
-  lambda:
-    source:
-      commit: default-commit
-    inputs:
-      name: ttt
-      apigee: ttt
