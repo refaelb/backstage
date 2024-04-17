@@ -16,9 +16,7 @@ grains:
   lambda:
     source:
       commit: default-commit
-    inputs:
-      name: '444444'
-      apigee: '444444'
+    inputs: {}
   KMS-Key:
     source:
       commit: default-commit
