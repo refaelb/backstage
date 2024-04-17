@@ -26,3 +26,6 @@ grains:
     inputs:
       name: ttt
       apigee: ttt
+  S3-Webapp:
+    source:
+      commit: default-commit
