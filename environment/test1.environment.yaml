@@ -1,28 +1,41 @@
-kind: environment
-environment_name: Event microservice Production
-description: Kubernetes based deployment of the event-ms optimized for production
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: tests
+  annotations:
+    github.com/project-slug: 'QualiNext/cs2018'
+spec:
+  type: service
+  lifecycle: experimental
+  owner: dbs
+  system: examples
+  providesApis: [torque-all-apis]
+---
+apiVersion: leumi.io/v1alpha1
+kind: Environments
 state: active
-owner_email: user@quali.com
+environment_name: Production Environment
+owner_email: amir.r@quali.com
 blueprint:
-  name: test-1
-  repository_name: cloud-native-application
-  branch: main
-  commit: 697d1a81fed31adf2eb9e75349def8245f80f87d
+  name: Webgame on S3 (TF)
+  repository_name: ProductionBPs
+  commit: 6723c086a9f4e43b3745364348fd78d14091b88d
 inputs:
-  '333': '333'
-  www: eeee
-  tt: tttt
+  Name: webapp-bucket
+  Name Prefix: torque-demo
+  AWS Region: us-west-1
 grains:
-  lambda:
+  S3-Webapp:
     source:
-      commit: f91427017aa816dbf5d26
+      commit: f91427017aa816dbf5d267076d8c56e7da84a38a
     inputs:
-      name: rererer
-      apigee: rerere
+      name: webapp-bucket
+      port: 8080
   KMS-Key:
     source:
-      commit: default-commit
+      commit: f91427017aa816dbf5d267076d8c56e7da84a38a
     inputs:
-      name: rerer
-      sha256: eeee
-      target: eeeee
+      name: kms-key
+      hase: true
+      target: https
+
