@@ -12,4 +12,11 @@ inputs:
   '333': '333'
   www: eeee
   tt: tttt
-grains: {}
+grains:
+  KMS-Key:
+    source:
+      commit: default-commit
+    inputs:
+      name: '44'
+      sha256: '444'
+      target: '444'
