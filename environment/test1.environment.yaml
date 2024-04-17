@@ -20,3 +20,9 @@ grains:
       name: '444'
       sha256: '444'
       target: '444'
+  lambda:
+    source:
+      commit: default-commit
+    inputs:
+      name: tt
+      apigee: ttt
