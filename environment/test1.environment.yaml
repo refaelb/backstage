@@ -28,7 +28,7 @@ grains:
       port: qqq
   lambda:
     source:
-      commit: default-commit
+      commit: f91427017aa816dbf5d26
     inputs:
-      name: test
-      apigee: test
+      name: name
+      apigee: 'null'
