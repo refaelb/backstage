@@ -17,8 +17,8 @@ grains:
     source:
       commit: f91427017aa816dbf5d26
     inputs:
-      name: name
-      apigee: 'null'
+      name: '55'
+      apigee: '555'
   KMS-Key:
     source:
       commit: default-commit
