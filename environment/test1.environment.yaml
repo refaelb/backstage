@@ -23,9 +23,9 @@ grains:
     source:
       commit: default-commit
     inputs:
-      name: eee
-      sha256: eee
-      target: eee
+      name: rrr
+      sha256: rrr
+      target: rrr
   S3-Webapp:
     source:
       commit: default-commit
