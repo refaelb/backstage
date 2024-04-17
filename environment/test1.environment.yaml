@@ -13,17 +13,6 @@ inputs:
   www: eeee
   tt: tttt
 grains:
-  lambda:
-    commit: default-commit
-    inputs:
-      name: hi
-      apigee: hh
-  KMS-Key:
-    commit: default-commit
-    inputs:
-      name: uu
-      sha256: uu
-      target: yyy
   S3-Webapp:
     source:
       commit: default-commit
