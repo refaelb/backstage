@@ -22,4 +22,7 @@ grains:
       target: eeee
   lambda:
     source:
-      commit: default-commit
+      commit: f91427017aa816dbf5d26
+    inputs:
+      name: ttt
+      apigee: ttt
