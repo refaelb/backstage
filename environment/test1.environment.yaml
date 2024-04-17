@@ -19,6 +19,3 @@ grains:
     inputs:
       name: name
       apigee: 'null'
-  KMS-Key:
-    source:
-      commit: default-commit
