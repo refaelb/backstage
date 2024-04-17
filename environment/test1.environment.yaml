@@ -12,18 +12,4 @@ inputs:
   '333': '333'
   www: eeee
   tt: tttt
-grains:
-  lambda:
-    source:
-      commit: default-commit
-    inputs: {}
-  KMS-Key:
-    source:
-      commit: default-commit
-    inputs: {}
-  S3-Webapp:
-    source:
-      commit: default-commit
-    inputs:
-      name: test
-      port: test
+grains: {}
