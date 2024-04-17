@@ -18,3 +18,9 @@ grains:
     inputs:
       name: ewe
       port: eee
+  KMS-Key:
+    commit: default-commit
+    inputs:
+      name: '66'
+      hase: '66'
+      target: '66'
