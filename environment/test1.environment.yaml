@@ -19,3 +19,10 @@ grains:
     inputs:
       name: name
       apigee: 'null'
+  KMS-Key:
+    source:
+      commit: default-commit
+    inputs:
+      name: eee
+      sha256: eee
+      target: eee
