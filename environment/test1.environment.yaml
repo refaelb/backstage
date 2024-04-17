@@ -12,4 +12,7 @@ inputs:
   '333': '333'
   www: eeee
   tt: tttt
-grains: {}
+grains:
+  lambda:
+    source:
+      commit: default-commit
