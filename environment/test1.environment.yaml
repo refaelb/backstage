@@ -15,7 +15,7 @@ inputs:
 grains:
   lambda:
     source:
-      commit: default-commit
+      commit: f91427017aa816dbf5d26
     inputs:
-      name: tt
-      apigee: ttt
+      name: rererer
+      apigee: rerere
