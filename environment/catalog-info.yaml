@@ -40,6 +40,6 @@ grains:
   apigw:
     name: apigw
     inputs:
-      swager_file_path: stringeee
+      swager_file_path: testss
 metadata:
   name: demo
