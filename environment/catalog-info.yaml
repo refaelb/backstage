@@ -1,44 +1,44 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: test1
+  name: demo
   annotations:
-    github.com/project-slug: QualiNext/cs2018
+    github.com/project-slug: 'QualiNext/cs2018'
 spec:
   type: service
-  lifecycle: experimental
-  owner: dbs
-  system: examples
-  providesApis:
-    - torque-all-apis
-
+  owner: demo@leumi.co.il
+  system: lcb
 ---
 apiVersion: leumi.io/v1alpha1
 kind: Environment
 state: active
-environment_name: Production Environment
-owner_email: amir.r@quali.com
-blueprint:
-  name: Webgame on S3 (TF)
-  repository_name: ProductionBPs
-  commit: 6723c086a9f4e43b3745364348fd78d14091b88d
+environment_name: demo
+owner_email: demo@leumi.co.il
 inputs:
-  Name: webapp-bucket
-  Name Prefix: torque-demo
+  project: lcb
+  zone: fe
   AWS Region: us-west-1
-grains:
-  S3-Webapp:
-    source:
-      commit: f91427017aa816dbf5d267076d8c56e7da84a38a
-    inputs:
-      name: webapp-bucket
-      port: 8080
-  KMS-Key:
-    source:
-      commit: default-commit
-    inputs:
-      name: '444'
-      sha256: '444'
-      target: '444'
-metadata: null
-spec: null
+grains: 
+  lambda:
+    source: 
+      commit: 'f91427017aa816dbf5d26'
+    inputs: 
+      lambdas: 
+        - name: lambda-1
+          path: /lambda-1
+          method: GET
+        - name: lambda-2
+          path: /lambda-2
+          method: POST
+  postgresql:
+    source: 
+      commit: 'f91427017aa816dbf5d26'
+    inputs: 
+      name: string
+  apigw:
+    source: 
+      commit: 'f91427017aa816dbf5d26'
+    inputs: 
+      swager_file_path: string
+metadata:
+spec:
