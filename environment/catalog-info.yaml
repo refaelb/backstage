@@ -25,5 +25,9 @@ grains:
     name: apigw
     inputs:
       swager_file_path: '77755'
+  postgresql:
+    name: postgresql
+    inputs:
+      name: rrr
 metadata:
   name: demo
