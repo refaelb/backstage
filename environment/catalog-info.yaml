@@ -22,9 +22,8 @@ inputs:
   AWS Region: us-west-1
 grains:
   apigw:
-    source:
-      commit: default-commit
+    name: apigw
     inputs:
-      swager_file_path: rrr
+      swager_file_path: ttt
 metadata:
   name: demo
