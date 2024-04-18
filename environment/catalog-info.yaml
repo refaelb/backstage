@@ -1,45 +1,45 @@
-apiVersion: backstage.io/v1alpha1
-kind: Component
-metadata:
-  name: test1
-  annotations:
-    github.com/project-slug: 'QualiNext/cs2018'
-spec:
-  type: service
-  lifecycle: experimental
-  owner: dbs
-  system: examples
-  providesApis: [torque-all-apis]
----
-apiVersion: leumi.io/v1alpha1
-kind: Environment
-metadata:
-  name: tests
-  annotations:
-    github.com/project-slug: QualiNext/cs2018
-spec:
-  type: service
-  lifecycle: experimental
-  owner: dbs
-  system: examples
-  providesApis:
-    - torque-all-apis
-state: active
-environment_name: Production Environment
-owner_email: amir.r@quali.com
-blueprint:
-  name: Webgame on S3 (TF)
-  repository_name: ProductionBPs
-  commit: 6723c086a9f4e43b3745364348fd78d14091b88d
-inputs:
-  Name: webapp-bucket
-  Name Prefix: torque-demo
-  AWS Region: us-west-1
-grains:
-  KMS-Key:
-    source:
-      commit: default-commit
-    inputs:
-      name: '00'
-      sha256: '000'
-      target: '99'
+- apiVersion: backstage.io/v1alpha1
+  kind: Component
+  metadata:
+    name: test1
+    annotations:
+      github.com/project-slug: QualiNext/cs2018
+  spec:
+    type: service
+    lifecycle: experimental
+    owner: dbs
+    system: examples
+    providesApis:
+      - torque-all-apis
+- apiVersion: leumi.io/v1alpha1
+  kind: Environment
+  metadata:
+    name: tests
+    annotations:
+      github.com/project-slug: QualiNext/cs2018
+  spec:
+    type: service
+    lifecycle: experimental
+    owner: dbs
+    system: examples
+    providesApis:
+      - torque-all-apis
+  state: active
+  environment_name: Production Environment
+  owner_email: amir.r@quali.com
+  blueprint:
+    name: Webgame on S3 (TF)
+    repository_name: ProductionBPs
+    commit: 6723c086a9f4e43b3745364348fd78d14091b88d
+  inputs:
+    Name: webapp-bucket
+    Name Prefix: torque-demo
+    AWS Region: us-west-1
+  grains:
+    KMS-Key:
+      source:
+        commit: default-commit
+      inputs:
+        name: '77'
+        sha256: '777'
+        target: '7777'
