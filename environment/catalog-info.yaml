@@ -26,5 +26,8 @@ grains:
       commit: default-commit
     inputs:
       swager_file_path: rrr
+  postgresql:
+    source:
+      commit: default-commit
 metadata:
   name: demo
