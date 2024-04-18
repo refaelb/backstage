@@ -3,12 +3,13 @@ kind: Component
 metadata:
   name: demo
   annotations:
-    github.com/project-slug: 'QualiNext/cs2018'
+    github.com/project-slug: QualiNext/cs2018
 spec:
   type: service
   lifecycle: production
   owner: demo@leumi.co.il
   system: lcb
+
 ---
 apiVersion: leumi.io/v1alpha1
 kind: Environment
@@ -19,12 +20,12 @@ inputs:
   project: lcb
   zone: fe
   AWS Region: us-west-1
-grains: 
+grains:
   lambda:
-    source: 
-      commit: 'f91427017aa816dbf5d26'
-    inputs: 
-      lambdas: 
+    source:
+      commit: f91427017aa816dbf5d26
+    inputs:
+      lambdas:
         - name: lambda-1
           path: /lambda-1
           method: GET
@@ -32,17 +33,13 @@ grains:
           path: /lambda-2
           method: POST
   postgresql:
-    source: 
-      commit: 'f91427017aa816dbf5d26'
-    inputs: 
+    source:
+      commit: f91427017aa816dbf5d26
+    inputs:
       name: string
   apigw:
-    source: 
-      commit: 'f91427017aa816dbf5d26'
-    inputs: 
-      swager_file_path: string
+    name: apigw
+    inputs:
+      swager_file_path: stringeee
 metadata:
   name: demo
-# spec:
-#   type: service
-  
