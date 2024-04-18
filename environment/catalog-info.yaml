@@ -7,7 +7,6 @@ metadata:
 spec:
   type: website
   lifecycle: production
-  type: service
   owner: demo@leumi.co.il
   system: lcb
 ---
