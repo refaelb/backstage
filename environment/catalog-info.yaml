@@ -28,5 +28,7 @@ grains:
   postgresql:
     source:
       commit: default-commit
+    inputs:
+      name: ttt
 metadata:
   name: demo
