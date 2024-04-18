@@ -1,3 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: test1
+  annotations:
+    github.com/project-slug: 'QualiNext/cs2018'
+spec:
+  type: service
+  lifecycle: experimental
+  owner: dbs
+  system: examples
+  providesApis: [torque-all-apis]
+---
 apiVersion: leumi.io/v1alpha1
 kind: Environment
 state: active
@@ -18,13 +31,21 @@ grains:
     inputs:
       name: webapp-bucket
       port: 8080
+  KMS-Key:
+    source:
+      commit: f91427017aa816dbf5d267076d8c56e7da84a38a
+    inputs:
+      name: kms-key
+      hase: true
+      target: https
+
 metadata:
   name: cart
   description: cart microservice
   annotations:
-    torque.io/space: 03-Live
-    torque.io/environment: Webgame on S3
-    jenkins.io/job-full-name: cli/torque-cli-docker
+    torque.io/space: "03-Live"
+    torque.io/environment: "Webgame on S3"
+    jenkins.io/job-full-name: "cli/torque-cli-docker"
   tags:
     - retail
 spec:
