@@ -3,13 +3,15 @@ kind: Component
 metadata:
   name: test1
   annotations:
-    github.com/project-slug: 'QualiNext/cs2018'
+    github.com/project-slug: QualiNext/cs2018
 spec:
   type: service
   lifecycle: experimental
   owner: dbs
   system: examples
-  providesApis: [torque-all-apis]
+  providesApis:
+    - torque-all-apis
+
 ---
 apiVersion: leumi.io/v1alpha1
 kind: Environment
@@ -31,16 +33,5 @@ grains:
     inputs:
       name: webapp-bucket
       port: 8080
-  KMS-Key:
-    source:
-      commit: f91427017aa816dbf5d267076d8c56e7da84a38a
-    inputs:
-      name: kms-key
-      hase: true
-      target: https
-
-metadata:
-  
-spec:
-  
-  
+metadata: null
+spec: null
