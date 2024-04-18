@@ -25,5 +25,8 @@ grains:
     name: apigw
     inputs:
       swager_file_path: ttt
+  postgresql:
+    source:
+      commit: default-commit
 metadata:
   name: demo
