@@ -41,4 +41,10 @@ grains:
     inputs: 
       swager_file_path: string
 metadata:
+  name: demo
+  annotations:
+    github.com/project-slug: 'QualiNext/cs2018'
 spec:
+  type: service
+  owner: demo@leumi.co.il
+  system: lcb
