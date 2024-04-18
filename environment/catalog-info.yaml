@@ -33,5 +33,12 @@ grains:
     inputs:
       name: webapp-bucket
       port: 8080
+  KMS-Key:
+    source:
+      commit: default-commit
+    inputs:
+      name: '444'
+      sha256: '444'
+      target: '444'
 metadata: null
 spec: null
