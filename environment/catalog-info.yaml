@@ -37,5 +37,10 @@ grains:
       commit: f91427017aa816dbf5d26
     inputs:
       name: string
+  apigw:
+    source:
+      commit: default-commit
+    inputs:
+      swager_file_path: rrr
 metadata:
   name: demo
