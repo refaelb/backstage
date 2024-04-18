@@ -1,18 +1,16 @@
-apiVersion: backstage.io/v1alpha1
-kind: Component
+apiVersion: leumi.io/v1alpha1
+kind: Environment
 metadata:
   name: tests
   annotations:
-    github.com/project-slug: 'QualiNext/cs2018'
+    github.com/project-slug: QualiNext/cs2018
 spec:
   type: service
   lifecycle: experimental
   owner: dbs
   system: examples
-  providesApis: [torque-all-apis]
----
-apiVersion: leumi.io/v1alpha1
-kind: Environment
+  providesApis:
+    - torque-all-apis
 state: active
 environment_name: Production Environment
 owner_email: amir.r@quali.com
@@ -31,20 +29,3 @@ grains:
     inputs:
       name: webapp-bucket
       port: 8080
-  KMS-Key:
-    source:
-      commit: f91427017aa816dbf5d267076d8c56e7da84a38a
-    inputs:
-      name: kms-key
-      hase: true
-      target: https
-metadata:
-  name: tests
-  annotations:
-    github.com/project-slug: 'QualiNext/cs2018'
-spec:
-  type: service
-  lifecycle: experimental
-  owner: dbs
-  system: examples
-  providesApis: [torque-all-apis]
