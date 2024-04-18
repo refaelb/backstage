@@ -40,5 +40,5 @@ grains:
       commit: 'f91427017aa816dbf5d26'
     inputs: 
       swager_file_path: string
-# metadata:
-# spec:
+metadata:
+spec:
