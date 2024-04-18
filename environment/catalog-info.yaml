@@ -40,20 +40,7 @@ grains:
       target: https
 
 metadata:
-  name: cart
-  description: cart microservice
-  annotations:
-    torque.io/space: "03-Live"
-    torque.io/environment: "Webgame on S3"
-    jenkins.io/job-full-name: "cli/torque-cli-docker"
-  tags:
-    - retail
+  
 spec:
-  type: aws
-  owner: retail-team
-  lifecycle: production
-  system: retail
-  dependsOn:
-    - resource:default/retail-cache
-    - resource:default/retail-db
+  
   
