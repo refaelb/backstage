@@ -35,7 +35,7 @@ grains:
   postgresql:
     name: postgresql
     inputs:
-      name: re
+      name: db
   apigw:
     source:
       commit: default-commit
