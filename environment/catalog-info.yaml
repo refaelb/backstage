@@ -5,7 +5,7 @@ metadata:
   annotations:
     github.com/project-slug: 'QualiNext/cs2018'
 spec:
-  type: website
+  type: service
   lifecycle: production
   owner: demo@leumi.co.il
   system: lcb
