@@ -29,20 +29,5 @@ grains:
     name: postgresql
     inputs:
       name: rrr
-  lambda:
-    name: lambda
-    inputs:
-      lambdas:
-        - name: lambda-1
-          path: /lambda-1
-          method: GET
-        - name: lambda-2
-          path: /lambda-2
-          method: POST
-      lambdas[0]:
-        method: post
-        name: lambda-1g
-      lambdas[1]:
-        method: t
 metadata:
   name: demo
