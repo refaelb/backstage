@@ -21,21 +21,6 @@ inputs:
   zone: fe
   AWS Region: us-west-1
 grains:
-  lambda:
-    source:
-      commit: f91427017aa816dbf5d26
-    inputs:
-      lambdas:
-        - name: lambda-1
-          path: /lambda-1
-          method: GET
-        - name: lambda-2
-          path: /lambda-2
-          method: POST
-  postgresql:
-    name: postgresql
-    inputs:
-      name: db
   apigw:
     source:
       commit: default-commit
