@@ -29,8 +29,5 @@ grains:
     name: postgresql
     inputs:
       name: rrr
-  lambda:
-    source:
-      commit: default-commit
 metadata:
   name: demo
