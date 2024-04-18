@@ -1,3 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: test1
+  annotations:
+    github.com/project-slug: 'QualiNext/cs2018'
+spec:
+  type: service
+  lifecycle: experimental
+  owner: dbs
+  system: examples
+  providesApis: [torque-all-apis]
+---
 apiVersion: leumi.io/v1alpha1
 kind: Environment
 metadata:
