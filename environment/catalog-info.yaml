@@ -33,10 +33,9 @@ grains:
           path: /lambda-2
           method: POST
   postgresql:
-    source:
-      commit: f91427017aa816dbf5d26
+    name: postgresql
     inputs:
-      name: string
+      name: re
   apigw:
     source:
       commit: default-commit
