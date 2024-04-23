@@ -39,6 +39,8 @@ grains:
             method: GET
           - path: /lambda-1/admin
             method: POST
+        endpoints[0]:
+          method: test
       '1':
         name: lambda-2tests
         endpoints:
