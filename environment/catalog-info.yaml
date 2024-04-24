@@ -7,7 +7,7 @@ metadata:
 spec:
   type: service
   owner: demo@leumi.co.il
-  system: lcbspec:
+  system: lcbs
   lifecycle: production
 ---
 apiVersion: leumi.io/v1alpha1
