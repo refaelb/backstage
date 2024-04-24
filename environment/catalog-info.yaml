@@ -3,12 +3,13 @@ kind: Component
 metadata:
   name: demo
   annotations:
-    github.com/project-slug: 'QualiNext/cs2018'
+    github.com/project-slug: QualiNext/cs2018
 spec:
   type: service
   owner: demo@leumi.co.il
   system: lcbs
   lifecycle: production
+
 ---
 apiVersion: leumi.io/v1alpha1
 kind: Environment
@@ -19,37 +20,37 @@ inputs:
   project: lcb
   zone: fe
   AWS Region: us-west-1
-grains: 
+grains:
   lambda:
-    source: 
-      commit: 'f91427017aa816dbf5d26'
+    source:
+      commit: f91427017aa816dbf5d26
     inputs:
-      - name: "lambda-1"
+      - name: lambda-1
         endpoints:
-          - path: "/lambda-1"
-            method: "GET"
-          - path: "/lambda-1/admin"
-            method: "POST"
-      - name: "lambda-2"
+          - path: /lambda-1
+            method: GET
+          - path: /lambda-1/admin
+            method: POST
+      - name: lambda-2
         endpoints:
-          - path: "/lambda-2"
-            method: "POST"
-      - name: "lambda-3"
+          - path: /lambda-2
+            method: POST
+      - name: lambda-3
         endpoints:
-          - path: "/lambda-3/data"
-            method: "GET"
-          - path: "/lambda-3/update"
-            method: "PUT"
+          - path: /lambda-3/data
+            method: GET
+          - path: /lambda-3/update
+            method: PUT
   postgresql:
-    source: 
-      commit: 'f91427017aa816dbf5d26'
-    inputs: 
+    source:
+      commit: f91427017aa816dbf5d26
+    inputs:
       name: string
   apigw:
-    source: 
-      commit: 'f91427017aa816dbf5d26'
-    inputs: 
-      swager_file_path: string
+    name: apigw
+    inputs:
+      name: apigw
+      inputs:
+        swager_file_path: stringrrr
 metadata:
   name: demo
-
