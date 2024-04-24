@@ -26,22 +26,24 @@ grains:
     inputs:
       name: lambda
       inputs:
-        - name: test1
-          endpoints:
-            - path: /lambda-1
-              method: GET
-            - path: /lambda-1/admin
-              method: POST
-        - name: lambda-2
-          endpoints:
-            - path: /lambda-2
-              method: POST
-        - name: lambda-3
-          endpoints:
-            - path: /lambda-3/data
-              method: GET
-            - path: /lambda-3/update
-              method: PUT
+        name: yyyyyy
+        inputs:
+          - name: test1
+            endpoints:
+              - path: /lambda-1
+                method: GET
+              - path: /lambda-1/admin
+                method: POST
+          - name: lambda-2
+            endpoints:
+              - path: /lambda-2
+                method: POST
+          - name: lambda-3
+            endpoints:
+              - path: /lambda-3/data
+                method: GET
+              - path: /lambda-3/update
+                method: PUT
   postgresql:
     source:
       commit: f91427017aa816dbf5d26
