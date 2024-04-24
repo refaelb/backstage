@@ -1,14 +1,4 @@
-apiVersion: backstage.io/v1alpha1
-kind: Component
-metadata:
-  name: demo
-  annotations:
-    github.com/project-slug: QualiNext/cs2018
-spec:
-  type: service
-  lifecycle: production
-  owner: demo@leumi.co.il
-  system: lcb
+null
 
 ---
 apiVersion: leumi.io/v1alpha1
@@ -26,7 +16,8 @@ grains:
     inputs:
       source:
         commit: default-commit-value
-      inputs: [name: 22]
+      inputs:
+        - name: 22
   postgresql:
     name: postgresql
     inputs:
