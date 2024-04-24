@@ -34,7 +34,7 @@ grains:
     inputs:
       source:
         commit: default-commit-value
-      inputs:
+      lambdas:
         - name: lambda-1
           endpoints:
             - path: /lambda-1
