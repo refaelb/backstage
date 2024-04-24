@@ -24,7 +24,9 @@ grains:
   apigw:
     name: apigw
     inputs:
-      swager_file_path: '77755'
+      source:
+        commit: default-commit-value
+      inputs: []
   postgresql:
     name: postgresql
     inputs:
