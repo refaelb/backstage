@@ -16,8 +16,7 @@ grains:
     inputs:
       source:
         commit: default-commit-value
-      inputs:
-        - name: 22
+      inputs: []
   postgresql:
     name: postgresql
     inputs:
