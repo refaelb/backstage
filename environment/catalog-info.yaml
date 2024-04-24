@@ -30,7 +30,6 @@ grains:
     inputs:
       name: rrr
   lambda:
-    name: lambda
     inputs:
       source:
         commit: default-commit-value
