@@ -43,7 +43,7 @@ grains:
           - path: /lambda-2
             method: POST
           - method: POS
-          path: /lambda-
+            path: /lambda-
       - name: 'lambda-3 '
         endpoints:
           - path: /lambda-3/data
