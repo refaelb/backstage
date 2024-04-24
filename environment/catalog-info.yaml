@@ -22,7 +22,8 @@ inputs:
   AWS Region: us-west-1
 grains:
   lambda:
-    name: lambda
+    source:
+      commit: f91427017aa816dbf5d26
     inputs:
       name: lambda
       inputs:
