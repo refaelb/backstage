@@ -22,28 +22,25 @@ inputs:
   AWS Region: us-west-1
 grains:
   lambda:
-    name: lambda
+    source: 
+      commit: 'f91427017aa816dbf5d26'
     inputs:
-      name: lambda
-      inputs:
-        name: yyyyyy
-        inputs:
-          - name: test1
-            endpoints:
-              - path: /lambda-1
-                method: GET
-              - path: /lambda-1/admin
-                method: POST
-          - name: lambda-2
-            endpoints:
-              - path: /lambda-2
-                method: POST
-          - name: lambda-3
-            endpoints:
-              - path: /lambda-3/data
-                method: GET
-              - path: /lambda-3/update
-                method: PUT
+      - name: "lambda-1"
+        endpoints:
+          - path: "/lambda-1"
+            method: "GET"
+          - path: "/lambda-1/admin"
+            method: "POST"
+      - name: "lambda-2"
+        endpoints:
+          - path: "/lambda-2"
+            method: "POST"
+      - name: "lambda-3"
+        endpoints:
+          - path: "/lambda-3/data"
+            method: "GET"
+          - path: "/lambda-3/update"
+            method: "PUT"
   postgresql:
     source:
       commit: f91427017aa816dbf5d26
