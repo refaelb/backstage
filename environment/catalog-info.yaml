@@ -22,10 +22,9 @@ inputs:
   AWS Region: us-west-1
 grains:
   lambda:
-    name: lambda
     inputs:
       name: lambda
-      inputs:
+      lambdas:
         - name: lambda-333
           endpoints:
             - path: /lambda-1
