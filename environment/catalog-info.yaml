@@ -32,25 +32,19 @@ grains:
   lambda:
     name: lambda
     inputs:
-      '0':
-        name: lambda-tests
+      - name: lambda-tests
         endpoints:
           - path: /lambda-1
             method: GET
           - path: /lambda-1/admin
             method: POST
-        endpoints[0]:
-          method: test
-      '1':
-        name: lambda-2tests
+      - name: lambda-2tests
         endpoints:
           - path: /lambda-2
             method: POST
-        endpoints[0]:
-          method: POS
+          - method: POS
           path: /lambda-
-      '2':
-        name: 'lambda-3 '
+      - name: 'lambda-3 '
         endpoints:
           - path: /lambda-3/data
             method: GET
