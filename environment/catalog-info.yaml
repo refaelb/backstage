@@ -1,5 +1,13 @@
-null
-
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: demo
+  annotations:
+    github.com/project-slug: 'QualiNext/cs2018'
+spec:
+  type: service
+  owner: demo@leumi.co.il
+  system: lcb
 ---
 apiVersion: leumi.io/v1alpha1
 kind: Environment
