@@ -45,10 +45,10 @@ grains:
     kind: blueprint
     spec:
       source:
-        commit: f91427017aa816dbf5d267076d8c56e7da84a38a
+        commit: ccc
       inputs:
-        name: rrr
-        port: rrr
+        name: vvvvv
+        port: vvvvvvvvvv
   lambda:
     kind: blueprint
     spec:
