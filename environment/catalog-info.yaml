@@ -49,14 +49,6 @@ grains:
       inputs:
         name: ww
         apigee: www
-  S3-Webapp:
-    kind: blueprint
-    spec:
-      source:
-        commit: f91427017aa816dbf5d26
-      inputs:
-        name: trtt
-        port: ttrrr
 metadata:
   name: demo
 spec:
