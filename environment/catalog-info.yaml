@@ -1,27 +1,46 @@
-[]
-
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: demo
+  description: The place to be, for great artists
+  labels:
+    example.com/custom: custom_label_value
+  annotations:
+    example.com/service-discovery: artistweb
+    circleci.com/project-slug: github/example-org/artist-website
+  tags:
+    - java
+  links:
+    - url: https://admin.example-org.com
+      title: Admin Dashboard
+      icon: dashboard
+      type: admin-dashboard
+spec:
+  type: website
+  lifecycle: production
+  owner: artist-relations-team
+  system: public-websites
 ---
-|
-  apiVersion: leumi.io/v1alpha1
-  kind: Environment
-  state: active
-  environment_name: demo
-  owner_email: demo@leumi.co.il
-  inputs:
-    project: lcb
-    zone: fe
-    AWS Region: us-west-1
-  grains:
-    postgresql:
-      kind: blueprint
-      spec:
-        source:
-          commit: f91427017aa816dbf5d26
-        inputs:
-          - name: demo
-        outputs:
-          - name
-  metadata:
-    name: demo
-  spec:
-    type: service
+apiVersion: leumi.io/v1alpha1
+kind: Environment
+state: active
+environment_name: demo
+owner_email: demo@leumi.co.il
+inputs:
+  project: lcb
+  zone: fe
+  AWS Region: us-west-1
+grains:
+  postgresql:
+    kind: blueprint
+    spec:
+      source:
+        commit: f91427017aa816dbf5d26
+      inputs:
+        - name: demo
+      outputs:
+        - name
+metadata:
+  name: demo
+spec:
+  type: service
