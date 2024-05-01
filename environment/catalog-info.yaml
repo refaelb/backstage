@@ -32,15 +32,6 @@ inputs:
   zone: fe
   AWS Region: us-west-1
 grains:
-  postgresql:
-    kind: blueprint
-    spec:
-      source:
-        commit: f91427017aa816dbf5d26
-      inputs:
-        - name: demo
-      outputs:
-        - name
   KMS-Key:
     kind: blueprint
     spec:
@@ -50,8 +41,6 @@ grains:
         name: aaa
         sha256: aaa
         target: xxx
-      outputs:
-        - name
 metadata:
   name: demo
 spec:
