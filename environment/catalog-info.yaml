@@ -47,8 +47,8 @@ grains:
       source:
         commit: f91427017aa816dbf5d267076d8c56e7da84a38a
       inputs:
-        name: ree
-        port: ree
+        name: '444'
+        port: '555'
 metadata:
   name: demo
 spec:
