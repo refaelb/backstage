@@ -39,6 +39,9 @@ grains:
         - name: demo
       outputs:
         - name
+  lambda:
+    source:
+      commit: default-commit
 metadata:
   name: demo
 spec:
