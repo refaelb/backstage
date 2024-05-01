@@ -30,15 +30,6 @@ grains:
         name: demo
       outputs:
         - name
-  apigw:
-    kind: blueprint
-    spec:
-      source:
-        commit: f91427017aa816dbf5d26
-      inputs:
-        name: demo
-      outputs:
-        - name
 metadata:
   name: demo
 spec:
