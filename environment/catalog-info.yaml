@@ -41,18 +41,6 @@ grains:
         - name: demo
       outputs:
         - name
-  KMS-Key:
-    source:
-      commit: f91427017aa816dbf5d267076d8c56e7da84a38a
-    inputs:
-      name: string
-      sha256: boolean
-      target: string
-    spec:
-      inputs:
-        name: eww
-        sha256: www
-        target: www
 metadata:
   name: demo
 spec:
