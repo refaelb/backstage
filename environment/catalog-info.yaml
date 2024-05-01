@@ -1,37 +1,37 @@
-apiVersion: backstage.io/v1alpha1
-kind: Component
-metadata:
-  name: demo
-  annotations:
-    github.com/project-slug: QualiNext/cs2018
-spec:
-  type: service
-  owner: demo@leumi.co.il
-  system: lcb
-  lifecycle: production
+a
 
 ---
-apiVersion: leumi.io/v1alpha1
-kind: Environment
-state: active
-environment_name: demo
-owner_email: demo@leumi.co.il
-inputs:
-  project: lcb
-  zone: fe
-  AWS Region: us-west-1
-grains:
-  postgresql:
-    kind: blueprint
-    spec:
-      source:
-        commit: f91427017aa816dbf5d26
-      inputs:
-        - name: demo
-      outputs:
-        - name
-  
-metadata:
-  name: demo
-spec:
-  type: service
+|
+  apiVersion: leumi.io/v1alpha1
+  kind: Environment
+  state: active
+  environment_name: demo
+  owner_email: demo@leumi.co.il
+  inputs:
+    project: lcb
+    zone: fe
+    AWS Region: us-west-1
+  grains:
+    postgresql:
+      kind: blueprint
+      spec:
+        source:
+          commit: f91427017aa816dbf5d26
+        inputs:
+          - name: demo
+        outputs:
+          - name
+    KMS-Key:
+      kind: blueprint
+      spec:
+        source:
+          commit: f91427017aa816dbf5d26
+          inputs: &ref_0
+            name: ddd
+            sha256: ddd
+            target: ddd
+      inputs: *ref_0
+  metadata:
+    name: demo
+  spec:
+    type: service
