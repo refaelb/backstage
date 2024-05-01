@@ -49,6 +49,11 @@ grains:
       inputs:
         name: ww
         apigee: www
+  S3-Webapp:
+    spec:
+      inputs:
+        name: fff
+        port: fff
 metadata:
   name: demo
 spec:
