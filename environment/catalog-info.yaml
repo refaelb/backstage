@@ -40,6 +40,15 @@ grains:
       inputs:
         name: vvvvv
         port: vvvvvvvvvv
+  KMS-Key:
+    kind: blueprint
+    spec:
+      source:
+        commit: f91427017aa816dbf5d267076d8c56e7da84a38a
+      inputs:
+        name: rrr
+        sha256: rrrrrrr
+        target: rrrrrrrrrr
 metadata:
   name: demo
 spec:
