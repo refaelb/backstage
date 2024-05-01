@@ -36,27 +36,27 @@ grains:
     kind: blueprint
     spec:
       source:
-        commit: 'f91427017aa816dbf5d267076d8c56e7da84a38a'
+        commit: f91427017aa816dbf5d267076d8c56e7da84a38a
       inputs:
-        name: 'jjj'
-        sha256: 'fff'
-        target: 'ggggggg'
+        name: jjj
+        sha256: fff
+        target: ggggggg
   S3-Webapp:
     kind: blueprint
     spec:
       source:
-        commit: 'ccc'
+        commit: ccc
       inputs:
-        name: 'vvvvv'
-        port: 'vvvvvvvvvv'
+        name: vvvvv
+        port: vvvvvvvvvv
   lambda:
     kind: blueprint
     spec:
       source:
-        commit: 'f91427017aa816dbf5d267076d8c56e7da84a38a33333'
+        commit: f91427017aa816dbf5d267076d8c56e7da84a38a33333
       inputs:
-        name: 'xx'
-        apigee: 'cc'
+        name: dd
+        apigee: f
 metadata:
   name: demo
 spec:
