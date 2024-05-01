@@ -27,7 +27,7 @@ grains:
       source:
         commit: f91427017aa816dbf5d26
       inputs:
-        name: demo
+        - name: demo
       outputs:
         - name
   apigw:
