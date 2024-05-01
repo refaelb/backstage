@@ -49,6 +49,14 @@ grains:
       inputs:
         name: rrr
         port: rrr
+  lambda:
+    kind: blueprint
+    spec:
+      source:
+        commit: f91427017aa816dbf5d267076d8c56e7da84a38a
+      inputs:
+        name: rrr
+        apigee: ttt
 metadata:
   name: demo
 spec:
