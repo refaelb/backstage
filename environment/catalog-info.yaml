@@ -17,13 +17,7 @@ grains:
         - name: demo
       outputs:
         - name
-  KMS-Key:
-    source:
-      commit: default-commit
-    inputs:
-      name: eeeeee
-      sha256: eee
-      target: eeeeeeeeeee
+  
 metadata:
   name: demo
 spec:
