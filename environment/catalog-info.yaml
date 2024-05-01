@@ -1,17 +1,7 @@
+[]
 
-apiVersion: backstage.io/v1alpha1
-kind: Component
-metadata:
-  name: demo
-  annotations:
-    github.com/project-slug: 'QualiNext/cs2018'
-spec:
-  type: service
-  lifecycle: experimental
-  owner: dbs
-  system: examples
-  providesApis: [torque-all-apis]
 ---
+|
   apiVersion: leumi.io/v1alpha1
   kind: Environment
   state: active
@@ -31,16 +21,6 @@ spec:
           - name: demo
         outputs:
           - name
-    KMS-Key:
-      kind: blueprint
-      spec:
-        source:
-          commit: f91427017aa816dbf5d26
-          inputs: &ref_0
-            name: ddd
-            sha256: ddd
-            target: ddd
-      inputs: *ref_0
   metadata:
     name: demo
   spec:
