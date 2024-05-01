@@ -50,6 +50,8 @@ grains:
         name: aaa
         sha256: aaa
         target: xxx
+      outputs:
+        - name
 metadata:
   name: demo
 spec:
