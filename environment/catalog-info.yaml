@@ -41,6 +41,16 @@ grains:
         - name: demo
       outputs:
         - name
+  KMS-Key:
+    kind: blueprint
+    spec:
+      source:
+        commit: f91427017aa816dbf5d26
+        inputs: &ref_0
+          name: eee
+          sha256: eee
+          target: eee
+    inputs: *ref_0
 metadata:
   name: demo
 spec:
