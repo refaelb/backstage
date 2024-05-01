@@ -30,12 +30,6 @@ grains:
         - name: demo
       outputs:
         - name
-  apigw:
-    name: apigw
-    inputs:
-      name: apigw
-      inputs:
-        swager_file_path: string
 metadata:
   name: demo
 spec:
