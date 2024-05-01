@@ -41,16 +41,6 @@ grains:
         name: aaa
         sha256: aaa
         target: xxx
-  lambda:
-    source:
-      commit: f91427017aa816dbf5d26
-    inputs:
-      name: string
-      apigee: string
-    spec:
-      inputs:
-        name: ddd
-        apigee: ddd
 metadata:
   name: demo
 spec:
