@@ -12,7 +12,6 @@ spec:
   system: examples
   providesApis: [torque-all-apis]
 ---
-|
   apiVersion: leumi.io/v1alpha1
   kind: Environment
   state: active
