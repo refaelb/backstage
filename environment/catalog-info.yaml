@@ -22,7 +22,6 @@ spec:
   system: public-websites
 
 ---
-
 apiVersion: leumi.io/v1alpha1
 kind: Environment
 state: active
@@ -42,16 +41,6 @@ grains:
         - name: demo
       outputs:
         - name
-  KMS-Key:
-    kind: blueprint
-    spec:
-      source:
-        commit: f91427017aa816dbf5d26
-        inputs: &ref_0
-          name: dd
-          sha256: ddd
-          target: ddd
-    inputs: *ref_0
 metadata:
   name: demo
 spec:
