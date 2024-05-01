@@ -41,6 +41,14 @@ grains:
         name: aaa
         sha256: aaa
         target: xxx
+  lambda:
+    kind: blueprint
+    spec:
+      source:
+        commit: f91427017aa816dbf5d26
+      inputs:
+        name: ww
+        apigee: www
 metadata:
   name: demo
 spec:
