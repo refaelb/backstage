@@ -42,13 +42,15 @@ grains:
         sha256: ddd
         target: ddd
   lambda:
-    kind: blueprint
+    source:
+      commit: f91427017aa816dbf5d26
+    inputs:
+      name: string
+      apigee: string
     spec:
-      source:
-        commit: f91427017aa816dbf5d26
       inputs:
-        name: ww
-        apigee: www
+        name: rerr
+        apigee: ttttt
   S3-Webapp:
     kind: blueprint
     spec:
