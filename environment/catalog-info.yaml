@@ -49,11 +49,6 @@ grains:
       inputs:
         name: ww
         apigee: www
-  S3-Webapp:
-    spec:
-      inputs:
-        name: dsd
-        port: sss
 metadata:
   name: demo
 spec:
