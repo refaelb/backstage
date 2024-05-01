@@ -38,9 +38,9 @@ grains:
       source:
         commit: f91427017aa816dbf5d26
       inputs:
-        name: aaa
-        sha256: aaa
-        target: xxx
+        name: ddd
+        sha256: ddd
+        target: ddd
   lambda:
     kind: blueprint
     spec:
