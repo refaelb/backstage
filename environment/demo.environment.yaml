@@ -1,0 +1,30 @@
+apiVersion: leumi.io/v1alpha1
+kind: Environment
+state: active
+environment_name: demo
+owner_email: demo@leumi.co.il
+inputs:
+  project: lcb
+  zone: fe
+  AWS Region: us-west-1
+grains:
+  postgresql:
+    kind: blueprint
+    spec:
+      source:
+        commit: f91427017aa816dbf5d26
+      inputs:
+        - name: demo
+      outputs:
+        - name
+  KMS-Key:
+    source:
+      commit: default-commit
+    inputs:
+      name: eee
+      sha256: eee
+      target: eee
+metadata:
+  name: demo
+spec:
+  type: service
