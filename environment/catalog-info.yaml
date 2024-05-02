@@ -22,7 +22,6 @@ spec:
   system: public-websites
 
 ---
-|
   apiVersion: leumi.io/v1alpha1
   kind: Environment
   metadata:
