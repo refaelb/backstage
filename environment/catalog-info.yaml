@@ -61,19 +61,5 @@ grains:
       source:
         commit: f91427017aa816dbf5d267076d8c56e7da84a38a33333
       inputs:
-        - name: '1'
-          endpoints:
-            - path: /1
-              method: get
-            - path: /11
-              method: /post
-        - name: test2
-          endpoints:
-            - path: /22
-              method: get
-        - name: '333'
-          endpoints:
-            - path: rrr
-              method: r
-            - path: rrr
-              method: ttt
+        lambdas: ["lambda1", "lambda2", "lambda3"]
+        config: {["path": "/", "method": "GET","lambda": "lambda"],["path": "/", "method": "GET","lambda": "lambda"] }
