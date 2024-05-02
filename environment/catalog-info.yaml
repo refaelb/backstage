@@ -62,4 +62,4 @@ grains:
         commit: f91427017aa816dbf5d267076d8c56e7da84a38a33333
       inputs:
         lambdas: ["lambda1", "lambda2", "lambda3"]
-        config: {["path": "/", "method": "GET","lambda": "lambda"],["path": "/", "method": "GET","lambda": "lambda"] }
+        config: [{"path": "/", "method": "GET","lambda": "lambda"},{"path": "/", "method": "GET","lambda": "lambda"} ]
