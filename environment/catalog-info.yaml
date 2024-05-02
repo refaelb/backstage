@@ -22,44 +22,44 @@ spec:
   system: public-websites
 
 ---
-  apiVersion: leumi.io/v1alpha1
-  kind: Environment
-  metadata:
-    name: test1
-    state: active
-    environment_name: Production Environment
-    owner_email: amir.r@quali.com
-    blueprint:
-      name: Webgame on S3 (TF)
-      repository_name: ProductionBPs
-      commit: 6723c086a9f4e43b3745364348fd78d14091b88d
-    inputs:
-      Name: webapp-bucket
-      Name Prefix: torque-demo
-      AWS Region: us-west-1
-  grains:
-    S3-Webapp:
-      kind: blueprint
-      spec:
-        source:
-          commit: f91427017aa816dbf5d267076d8c56e7da84a38a
-        inputs:
-          name: name
-          port: port
-    KMS-Key:
-      kind: blueprint
-      spec:
-        source:
-          commit: f91427017aa816dbf5d267076d8c56e7da84a38a
-        inputs:
-          name: string
-          sha256: boolean
-          target: string
-    lambda:
-      kind: blueprint
-      spec:
-        source:
-          commit: f91427017aa816dbf5d267076d8c56e7da84a38a33333
-        inputs:
-          name: dd
-          apigee: fff
+apiVersion: leumi.io/v1alpha1
+kind: Environment
+metadata:
+  name: test1
+  state: active
+  environment_name: Production Environment
+  owner_email: amir.r@quali.com
+  blueprint:
+    name: Webgame on S3 (TF)
+    repository_name: ProductionBPs
+    commit: 6723c086a9f4e43b3745364348fd78d14091b88d
+  inputs:
+    Name: webapp-bucket
+    Name Prefix: torque-demo
+    AWS Region: us-west-1
+grains:
+  S3-Webapp:
+    kind: blueprint
+    spec:
+      source:
+        commit: f91427017aa816dbf5d267076d8c56e7da84a38a
+      inputs:
+        name: name
+        port: port
+  KMS-Key:
+    kind: blueprint
+    spec:
+      source:
+        commit: f91427017aa816dbf5d267076d8c56e7da84a38a
+      inputs:
+        name: string
+        sha256: boolean
+        target: string
+  lambda:
+    kind: blueprint
+    spec:
+      source:
+        commit: f91427017aa816dbf5d267076d8c56e7da84a38a33333
+      inputs:
+        name: eee
+        apigee: rrr
