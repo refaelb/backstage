@@ -1,25 +1,25 @@
-apiVersion: 'backstage.io/v1alpha1'
-kind: 'Component'
+apiVersion: backstage.io/v1alpha1
+kind: Component
 metadata:
-  name: 'demo'
-  description: 'The place to be, for great artists'
+  name: demo
+  description: The place to be, for great artists
   labels:
-    example.com/custom: 'custom_label_value'
+    example.com/custom: custom_label_value
   annotations:
-    example.com/service-discovery: 'artistweb'
-    circleci.com/project-slug: 'github/example-org/artist-website'
+    example.com/service-discovery: artistweb
+    circleci.com/project-slug: github/example-org/artist-website
   tags:
-    - 'java'
+    - java
   links:
-    - url: 'https://admin.example-org.com'
-      title: 'Admin Dashboard'
-      icon: 'dashboard'
-      type: 'admin-dashboard'
+    - url: https://admin.example-org.com
+      title: Admin Dashboard
+      icon: dashboard
+      type: admin-dashboard
 spec:
-  type: 'website'
-  lifecycle: 'production'
-  owner: 'artist-relations-team'
-  system: 'public-websites'
+  type: website
+  lifecycle: production
+  owner: artist-relations-team
+  system: public-websites
 
 ---
 apiVersion: leumi.io/v1alpha1
@@ -37,30 +37,29 @@ metadata:
     Name: webapp-bucket
     Name Prefix: torque-demo
     AWS Region: us-west-1
-
-grains: 
-  S3-Webapp: 
+grains:
+  S3-Webapp:
     kind: blueprint
     spec:
       source:
-        commit: 'f91427017aa816dbf5d267076d8c56e7da84a38a'
-      inputs: 
-        name: 'name'
-        port: 'port'
-  KMS-Key: 
-    kind: blueprint
-    spec:
-      source:
-        commit: 'f91427017aa816dbf5d267076d8c56e7da84a38a'
+        commit: f91427017aa816dbf5d267076d8c56e7da84a38a
       inputs:
-        name: 'string'
-        sha256: 'boolean'
-        target: 'string'
+        name: name
+        port: port
+  KMS-Key:
+    kind: blueprint
+    spec:
+      source:
+        commit: f91427017aa816dbf5d267076d8c56e7da84a38a
+      inputs:
+        name: string
+        sha256: boolean
+        target: string
   lambda:
     kind: blueprint
     spec:
       source:
-        commit: 'f91427017aa816dbf5d267076d8c56e7da84a38a33333'
+        commit: f91427017aa816dbf5d267076d8c56e7da84a38a33333
       inputs:
-        name: 'string'
-        apigee: 'string'
+        name: hj
+        apigee: jj
