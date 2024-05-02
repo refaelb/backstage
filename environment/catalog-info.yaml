@@ -64,11 +64,11 @@ grains:
         lambdas:
           - lambda1
           - lambda2
-          - lambda3
+          - lambda4
         config:
           - path: /
             method: GET
             lambda: lambda
           - path: /
             method: GET
-            lambda: lambda
+            lambda: '44444'
