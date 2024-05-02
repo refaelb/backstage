@@ -62,6 +62,6 @@ grains:
         commit: f91427017aa816dbf5d267076d8c56e7da84a38a33333
       inputs:
         name:
-          newValue: d
+          newValue: dd
         apigee:
-          newValue: fff
+          newValue: gggg
