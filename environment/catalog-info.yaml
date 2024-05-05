@@ -61,16 +61,8 @@ grains:
       inputs:
         lambdas:
           - lambda11
-          - lambda22
-          - lambda33
           - lambdaName
         config:
           - path: /
             method: GET
-            lambda: lambda
-          - path: /
-            method: GET
-            lambda: lambda
-          - path: /
-            method: GET
-            lambda: lambdaName
+            lambda: lambvvda
