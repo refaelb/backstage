@@ -44,17 +44,17 @@ grains:
       source:
         commit: f91427017aa816dbf5d267076d8c56e7da84a38a
       inputs:
-        name: ''
-        port: ''
+        name: 'ref'
+        port: 'portq'
   KMS-Key:
     kind: blueprint
     spec:
       source:
         commit: f91427017aa816dbf5d267076d8c56e7da84a38a
       inputs:
-        name: string
-        sha256: boolean
-        target: string
+        name: "nameq"
+        sha256: 'sha256q'
+        target: 'targetq'
   lambda:
     kind: blueprint
     spec:
