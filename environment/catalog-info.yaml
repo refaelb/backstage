@@ -50,9 +50,9 @@ grains:
       source:
         commit: f91427017aa816dbf5d267076d8c56e7da84a38a
       inputs:
-        name: nameqfff
-        sha256: sha256qgggg
-        target: targetqhhhh
+        name: nameqfffwe
+        sha256: sha256qggggttt
+        target: targetqhyyyyyyhhh
   lambda:
     kind: blueprint
     spec:
