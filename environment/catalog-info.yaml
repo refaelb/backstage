@@ -62,9 +62,9 @@ grains:
         commit: f91427017aa816dbf5d267076d8c56e7da84a38a33333
       inputs:
         lambdas:
-          - lambda1
-          - lambda2
-          - lambda3
+          - lambda11
+          - lambda22
+          - lambda33
         config:
           - path: /
             method: GET
