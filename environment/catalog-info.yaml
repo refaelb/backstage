@@ -57,7 +57,6 @@ grains:
           - lambdaName
           - lambdaName
           - lambdaName
-          - '"lambdaName'
           - lambdaName
         config:
           - path: /
