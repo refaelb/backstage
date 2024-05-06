@@ -56,12 +56,7 @@ grains:
           - lambda2
           - lambdaName
           - lambdaName
-          - lambdaName
-          - lambdaName
-          - lambdaName
-          - '"lambdaName1"'
-          - '"lambdaName11"'
-          - '"lambdaName111"'
+          - '"lambdaName3333"'
         config:
           - path: /
             method: GET
