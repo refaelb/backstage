@@ -64,13 +64,20 @@ grains:
           - 2
           - 3
           - lambdaName
+          - lambdaName
         config:
           - path: /
             method: GET
-            lambda: lambvvda
-          - path: /
-            method: GET
             lambda: lambdaName
           - path: /
             method: GET
             lambda: lambdaName
+          - path: rr/
+            method: GET
+            lambda: lambdaName
+          - path: /
+            methodyy: GETuu
+            lambda: lambdaName
+          - path: /
+            method: GET
+            lambda: lambdaNayyyme
