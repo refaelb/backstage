@@ -38,14 +38,6 @@ metadata:
     Name Prefix: torque-demo
     AWS Region: us-west-1
 grains:
-  S3-Webapp:
-    kind: blueprint
-    spec:
-      source:
-        commit: f91427017aa816dbf5d267076d8c56e7da84a38a
-      inputs:
-        name: reeeeteeeeee444
-        port: tr444www444
   lambda:
     kind: blueprint
     spec:
