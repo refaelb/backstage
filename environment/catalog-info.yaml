@@ -44,19 +44,15 @@ grains:
       source:
         commit: f91427017aa816dbf5d267076d8c56e7da84a38a
       inputs:
-        name: reeeet
-        port: tr444
+        name: reeeeteee
+        port: tr444www
   lambda:
     kind: blueprint
     spec:
       source:
         commit: f91427017aa816dbf5d267076d8c56e7da84a38a33333
       inputs:
-        lambdas:
-          - lambdaNameee
-          - lambdaName
-          - lambdaNameee
-          - lambdaNamerrrrrr
+        lambdas: lambdaNamessss
         config:
           - path: /
             method: GET
