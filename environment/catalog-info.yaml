@@ -38,30 +38,6 @@ metadata:
     Name Prefix: torque-demo
     AWS Region: us-west-1
 grains:
-  lambda:
-    kind: blueprint
-    spec:
-      source:
-        commit: f91427017aa816dbf5d267076d8c56e7da84a38a33333
-      inputs:
-        lambdas:
-          - lambdaNamessss
-          - lambdaNameeee
-          - lambdaName
-          - lambdaName444
-        config:
-          - path: /
-            method: GET
-            lambda: lambdaeee
-          - path: /
-            method: GET
-            lambda: lambdaName
-          - path: /
-            method: GET
-            lambda: lambdaName
-          - path: /
-            method: GET
-            lambda: lambdaName
   KMS-Key:
     kind: blueprint
     spec:
