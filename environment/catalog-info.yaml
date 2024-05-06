@@ -55,16 +55,9 @@ grains:
         lambdas:
           - lambda1
           - lambda2
-          - lambda3
-          - lambdaName
-          - '"lambdaNamet"'
-          - '"lambdaNamett"'
-          - '"lambdaNamettt"'
           - lambdaName
           - lambdaName
-          - '"lambdaNamhe"'
           - '"lambdaNamhhe"'
-          - '"lambdaNamhhhe"'
           - lambdaName
         config:
           - path: /
