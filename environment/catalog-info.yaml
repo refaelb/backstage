@@ -55,6 +55,8 @@ grains:
         lambdas:
           - lambda2
           - lambdaName
+          - lambdaName3333
+          - lambdaNameeee
           - lambdaName222
         config:
           - path: /
@@ -66,3 +68,6 @@ grains:
           - path: /
             method: GET
             lambda: lambdaName
+          - path: /
+            method: GET
+            lambda: lambdaNamesss
