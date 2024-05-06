@@ -37,47 +37,4 @@ metadata:
     Name: webapp-bucket
     Name Prefix: torque-demo
     AWS Region: us-west-1
-grains:
-  S3-Webapp:
-    kind: blueprint
-    spec:
-      source:
-        commit: f91427017aa816dbf5d267076d8c56e7da84a38a
-      inputs: {}
-  KMS-Key:
-    kind: blueprint
-    spec:
-      source:
-        commit: f91427017aa816dbf5d267076d8c56e7da84a38a
-      inputs:
-        name: '"nameqfffw555e"'
-        sha256: '"sha256qggggttt666"'
-        target: '"targetqhyyyyyyhhh777"'
-  lambda:
-    kind: blueprint
-    spec:
-      source:
-        commit: f91427017aa816dbf5d267076d8c56e7da84a38a33333
-      inputs:
-        lambdas:
-          - 1
-          - 2
-          - 3
-          - lambdaName
-          - lambdaName
-        config:
-          - path: /
-            method: GET
-            lambda: lambdaName
-          - path: /
-            method: GET
-            lambda: lambdaName
-          - path: rr/
-            method: GET
-            lambda: lambdaName
-          - path: /
-            methodyy: GETuu
-            lambda: lambdaName
-          - path: /
-            method: GET
-            lambda: lambdaNayyyme
+grains: {}
