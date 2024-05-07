@@ -17,7 +17,6 @@ kind: Environment
 environment_name: demo
 state: active
 owner_email: demo@leumi.com
-
 grains:
   KMS-Key:
     kind: blueprint
@@ -28,41 +27,7 @@ grains:
         name: 33eeee
         sha256: 444trrr
         target: 555yttt
-  lambda:
-    kind: blueprint
-    spec:
-      source:
-        commit: f91427017aa816dbf5d267076d8c56e7da84a38a33333
-      inputs:
-        lambdas:
-          - lambda1
-          - lambda2
-          - lambda3
-        config:
-          - path: /
-            method: GET
-            lambda: lambda
-          - path: /
-            method: GET
-            lambda: lambda
-          - path: /
-            method: GET
-            lambda: lambdaName
-          - path: /
-            method: GET
-            lambda: lambdaName
-  S3-Webapp:
-    kind: blueprint
-    spec:
-      source:
-        commit: f91427017aa816dbf5d267076d8c56e7da84a38a
-      inputs:
-        name: name444
-        port: port333
-
 metadata:
   name: demo
-
 spec:
   type: service
-
