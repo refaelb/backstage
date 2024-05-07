@@ -43,6 +43,14 @@ grains:
           - path: /
             method: GET
             lambda: demo2
+  S3-Webapp:
+    kind: blueprint
+    spec:
+      source:
+        commit: f91427017aa816dbf5d267076d8c56e7da84a38a
+      inputs:
+        name: demo
+        port: '443'
 metadata:
   name: demo
 spec:
