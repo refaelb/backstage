@@ -3,18 +3,8 @@ kind: Component
 metadata:
   name: demo
   description: The place to be, for great artists
-  labels:
-    example.com/custom: custom_label_value
   annotations:
     example.com/service-discovery: artistweb
-    circleci.com/project-slug: github/example-org/artist-website
-  tags:
-    - java
-  links:
-    - url: https://admin.example-org.com
-      title: Admin Dashboard
-      icon: dashboard
-      type: admin-dashboard
 spec:
   type: website
   lifecycle: production
@@ -24,19 +14,9 @@ spec:
 ---
 apiVersion: leumi.io/v1alpha1
 kind: Environment
-metadata:
-  name: test1
-  state: active
-  environment_name: Production Environment
-  owner_email: amir.r@quali.com
-  blueprint:
-    name: Webgame on S3 (TF)
-    repository_name: ProductionBPs
-    commit: 6723c086a9f4e43b3745364348fd78d14091b88d
-  inputs:
-    Name: webapp-bucket
-    Name Prefix: torque-demo
-    AWS Region: us-west-1
+environment_name: demo
+state: active
+owner_email: demo@leumi.com
 grains:
   KMS-Key:
     kind: blueprint
