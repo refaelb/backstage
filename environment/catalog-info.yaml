@@ -17,6 +17,7 @@ kind: Environment
 environment_name: demo
 state: active
 owner_email: demo@leumi.com
+
 grains:
   KMS-Key:
     kind: blueprint
@@ -58,3 +59,10 @@ grains:
       inputs:
         name: name444
         port: port333
+
+metadata:
+  name: demo
+
+spec:
+  type: service
+
