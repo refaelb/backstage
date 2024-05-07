@@ -64,6 +64,12 @@ grains:
           - path: /
             method: GET
             lambda: lambda
+          - path: /
+            method: GET
+            lambda: lambdaName
+          - path: /
+            method: GET
+            lambda: lambdaName
   S3-Webapp:
     kind: blueprint
     spec:
