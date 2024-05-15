@@ -8,7 +8,7 @@ metadata:
 spec:
   type: website
   lifecycle: production
-  owner: artist-relations-team
+  owner: platform
   system: public-websites
 
 ---
