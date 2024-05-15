@@ -1,29 +1,15 @@
-apiVersion: leumi.io/v1alpha1
-kind: Environment
-state: active
-environment_name: demo
-owner_email: demo@leumi.co.il
-inputs:
-  project: lcb
-  zone: fe
-  AWS Region: us-west-1
-grains:
-  postgresql:
-    kind: blueprint
-    spec:
-      source:
-        commit: f91427017aa816dbf5d26
-      inputs:
-        - name: demo
-      outputs:
-        - name
-  KMS-Key:
-    source:
-      commit: default-commit
-    inputs:
-      name: eee
-      sha256: eee
-      target: eee
+openapi: "3.0.0"
+info:
+  version: 1.0.0
+  title: Artist API
+  license:
+    name: MIT
+servers:
+  - url: http://artist.spotify.net/v1
+paths:
+  /artists:
+    get:
+      summary: List all artists
 metadata:
   name: demo
 spec:
