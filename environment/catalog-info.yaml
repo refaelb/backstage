@@ -8,7 +8,7 @@ metadata:
 spec:
   type: website
   lifecycle: production
-  owner: platform1
+  owner: aa
   system: public-websites
 
 ---
