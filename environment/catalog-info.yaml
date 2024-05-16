@@ -18,15 +18,6 @@ environment_name: demo
 state: active
 owner_email: demo@leumi.com
 grains:
-  KMS-Key:
-    kind: blueprint
-    spec:
-      source:
-        commit: f91427017aa816dbf5d267076d8c56e7da84a38a
-      inputs:
-        name: 33eeee
-        sha256: 444trrr
-        target: 555yttt
   lambda:
     kind: blueprint
     spec:
