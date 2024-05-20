@@ -5,6 +5,7 @@ metadata:
   description: The place to be, for great artists
   annotations:
     example.com/service-discovery: artistweb
+    leumi.io/environment-ref: "demo-api"
 spec:
   type: website
   lifecycle: production
