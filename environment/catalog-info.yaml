@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: demo
+  name: demo1
   description: The place to be, for great artists
   annotations:
     example.com/service-discovery: artistweb
@@ -15,7 +15,7 @@ spec:
 ---
 apiVersion: leumi.io/v1alpha1
 kind: Environment
-environment_name: demo
+environment_name: demo1
 state: active
 owner_email: demo@leumi.com
 grains:
