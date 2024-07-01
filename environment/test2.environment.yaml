@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Resource
 metadata:
-  name: test-api
+  name: test-api22
   description: The place to be, for great artists
   annotations:
     jenkins.io/job-full-name: "default:back"
