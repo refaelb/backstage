@@ -1,26 +1,66 @@
-kind: environment
-environment_name: Event microservice Production
-description: Kubernetes based deployment of the event-ms optimized for production
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: test-api
+  description: The place to be, for great artists
+  annotations:
+    jenkins.io/job-full-name: "default:back"
+spec:
+  type: website
+  lifecycle: production
+  owner: user:default/moticohen_2
+  system: lcb
+  providesApis: 
+
+    
+---
+apiVersion: leumi.io/v1alpha1
+kind: Environment
+environment_name: demo
 state: active
-owner_email: user@quali.com
-blueprint:
-  name: test-2
-  repository_name: cloud-native-application
-  branch: main
-  commit: 697d1a81fed31adf2eb9e75349def8245f80f87d
-inputs:
-  www: eeee
-  tt: ttttf
+owner_email: demo@leumi.com
 grains:
-  Grain2:
-    source:
-      commit: default-commit
-  Grain1:
-    source:
-      commit: default-commit
-  test:
-    source:
-      commit: default-commit
+  api:
+    kind: blueprint
+    spec:
+      source:
+        commit: f91427017aa816dbf5d267076d8c56e7da84a38a
+      inputs:
+        names: [api1, api2]
+  KMS-Key:
+    kind: blueprint
+    spec:
+      source:
+        commit: f91427017aa816dbf5d267076d8c56e7da84a38a
+      inputs:
+        name: 33eeee
+        sha256: 444trrr
+        target: 555yttt
   lambda:
-    source:
-      commit: default-commit
+    kind: blueprint
+    spec:
+      source:
+        commit: f91427017aa816dbf5d267076d8c56e7da84a38a33333
+      inputs:
+        lambdas:
+          - demo1
+          - demo2
+        config:
+          - path: /
+            method: GET
+            lambda: demo1
+          - path: /
+            method: GET
+            lambda: demo2
+  S3-Webapp:
+    kind: blueprint
+    spec:
+      source:
+        commit: f91427017aa816dbf5d267076d8c56e7da84a38a
+      inputs:
+        name: demo33
+        port: '44344'
+metadata:
+  name: test-api
+spec:
+  type: service
