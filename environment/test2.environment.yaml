@@ -10,57 +10,55 @@ spec:
   lifecycle: production
   owner: user:default/moticohen_2
   system: lcb
-  providesApis: 
 
-    
 ---
-apiVersion: leumi.io/v1alpha1
+# Second Document: Environment
+apiVersion: backstage.io/v1alpha1
 kind: Environment
-environment_name: demo
-state: active
-owner_email: demo@leumi.com
-grains:
-  api:
-    kind: blueprint
-    spec:
-      source:
-        commit: f91427017aa816dbf5d267076d8c56e7da84a38a
-      inputs:
-        names: [api1, api2]
-  KMS-Key:
-    kind: blueprint
-    spec:
-      source:
-        commit: f91427017aa816dbf5d267076d8c56e7da84a38a
-      inputs:
-        name: 33eeee
-        sha256: 444trrr
-        target: 555yttt
-  lambda:
-    kind: blueprint
-    spec:
-      source:
-        commit: f91427017aa816dbf5d267076d8c56e7da84a38a33333
-      inputs:
-        lambdas:
-          - demo1
-          - demo2
-        config:
-          - path: /
-            method: GET
-            lambda: demo1
-          - path: /
-            method: GET
-            lambda: demo2
-  S3-Webapp:
-    kind: blueprint
-    spec:
-      source:
-        commit: f91427017aa816dbf5d267076d8c56e7da84a38a
-      inputs:
-        name: demo33
-        port: '44344'
 metadata:
-  name: test-api
+  name: demo-environment
 spec:
-  type: service
+  environment_name: demo
+  state: active
+  owner_email: demo@leumi.com
+  grains:
+    api:
+      kind: blueprint
+      spec:
+        source:
+          commit: f91427017aa816dbf5d267076d8c56e7da84a38a
+        inputs:
+          names: [api1, api2]
+    KMS-Key:
+      kind: blueprint
+      spec:
+        source:
+          commit: f91427017aa816dbf5d267076d8c56e7da84a38a
+        inputs:
+          name: 33eeee
+          sha256: 444trrr
+          target: 555yttt
+    lambda:
+      kind: blueprint
+      spec:
+        source:
+          commit: f91427017aa816dbf5d267076d8c56e7da84a38a33333
+        inputs:
+          lambdas:
+            - demo1
+            - demo2
+          config:
+            - path: /
+              method: GET
+              lambda: demo1
+            - path: /
+              method: GET
+              lambda: demo2
+    S3-Webapp:
+      kind: blueprint
+      spec:
+        source:
+          commit: f91427017aa816dbf5d267076d8c56e7da84a38a
+        inputs:
+          name: demo33
+          port: '44344'
