@@ -1,0 +1,2 @@
+PROFILE = "test"
+BUCKET = "test"
