@@ -1,2 +1,1 @@
 PROFILE = "test"
-BUCKET = "test"
