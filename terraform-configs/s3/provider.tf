@@ -1,5 +1,4 @@
 provider "aws" {
-  profile = var.PROFILE
   region = "us-east-1"
 }
 
