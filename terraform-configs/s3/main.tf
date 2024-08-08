@@ -1,4 +1,4 @@
 resource "aws_s3_bucket" "private_bucket" {
-  bucket = "test"
+  bucket = "backstage-test"
   acl    = "private"
 }
