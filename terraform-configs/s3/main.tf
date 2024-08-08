@@ -1,4 +1,9 @@
-resource "aws_s3_bucket" "private_bucket" {
+
+resource "aws_s3_bucket" "example" {
   bucket = "backstage-test"
-  acl    = "private"
+
+  tags = {
+    Name        = "backstage"
+    Environment = "Dev"
+  }
 }
