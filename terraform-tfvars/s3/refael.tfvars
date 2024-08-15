@@ -1,1 +1,1 @@
-PROFILE = moti
+PROFILE = motir
