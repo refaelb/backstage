@@ -88,33 +88,48 @@ module "db" {
 #   )
 # }
 
-locals {
-  combined_ingress_rules = concat(
-    var.ingress_rules,
-    var.create_ec2 ? [
-      {
-        port            = 3306
-        cidr_blocks     = length(var.cidr_blocks) > 0 ? var.cidr_blocks : null
-        security_groups = length(var.cidr_blocks) > 0 ? null : [module.user_service_sg[0].security_group_id]
-      }
-    ] : []
-  )
-}
 
 
-module "user_service_sg" {
-  source = "../modules/sg"
-  providers = {
-    aws = aws
-  }
-  vpc_id = var.vpc_id
+# module "user_service_sg" {
+#   source = "../modules/sg"
+#   providers = {
+#     aws = aws
+#   }
+#   vpc_id = var.vpc_id
+#   name        = var.name
+#   description = "Security group for user-service with custom ports open within VPC"
+
+#   ingress_rules = local.combined_ingress_rules
+
+#   count = var.create_ec2 ? 1 : 0
+# }
+
+
+
+module "vote_service_sg" {
+  source = "terraform-aws-modules/security-group/aws"
+
   name        = var.name
-  description = "Security group for user-service with custom ports open within VPC"
+  description = "Security group for user-service with custom ports open within VPC, and PostgreSQL publicly open"
+  vpc_id      = "vpc-12345678"
 
-  ingress_rules = local.combined_ingress_rules
-
-  count = var.create_ec2 ? 1 : 0
+  ingress_cidr_blocks      = ["10.10.0.0/16"]
+  ingress_rules            = ["https-443-tcp"]
+  ingress_with_cidr_blocks = [
+    {
+      from_port   = 8080
+      to_port     = 8090
+      protocol    = "tcp"
+      description = "User-service ports"
+      cidr_blocks = "10.10.0.0/16"
+    },
+    {
+      rule        = "postgresql-tcp"
+      cidr_blocks = "0.0.0.0/0"
+    },
+  ]
 }
+
 
 # EC2 Instance Module
 module "ec2_instance" {
@@ -125,8 +140,8 @@ module "ec2_instance" {
   instance_type          = "t2.micro"
   key_name               = var.name
   monitoring             = true
-  # vpc_security_group_ids = [module.user_service_sg[0].security_group_id]
-  vpc_security_group_ids = var.create_ec2 ? [module.user_service_sg[0].security_group_id] : [] # Wrap the ID in a list
+  vpc_security_group_ids = [module.vote_service_sg.security_group_id]
+  # vpc_security_group_ids = var.create_ec2 ? [module.user_service_sg[0].security_group_id] : [] # Wrap the ID in a list
   subnet_id              = var.subnet_id
 
   tags = {
