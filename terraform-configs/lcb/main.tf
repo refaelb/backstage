@@ -92,12 +92,19 @@ module "db" {
 locals {
   combined_ingress_rules = concat(
     var.ingress_rules,
-    var.create_ec2 ? [
-      {
-        port            = 3306
-        security_groups = var.create_ec2 ? [module.user_service_sg[0].security_group_id] : [] # Use security_groups here
-      }
-    ] : []
+    var.create_ec2 ? (
+      length(var.cidr_blocks) > 0 ? [
+        {
+          port        = 3306
+          cidr_blocks = var.cidr_blocks
+        }
+      ] : [
+        {
+          port            = 3306
+          security_groups = [module.user_service_sg[0].security_group_id]
+        }
+      ]
+    ) : []
   )
 }
 
