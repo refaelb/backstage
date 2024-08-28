@@ -1,7 +1,7 @@
 create_rds = true
 create_ec2 = true
 
-name = "backstage3"
+name = "backstage2"
 subnet_id = "subnet-03c35ea8d4c7d6e16"
 vpc_id = "vpc-044ea61c95511720f"
 ingress_rules = [
