@@ -25,6 +25,12 @@ variable "create_ec2" {
   default = false
 }
 
+variable "cidr_blocks" {
+  description = "List of CIDR blocks"
+  type        = list(string)
+  default     = []
+}
+
 variable "ingress_rules" {
   type = list
   default = []
