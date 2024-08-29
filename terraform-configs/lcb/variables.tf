@@ -35,3 +35,8 @@ variable "ingress_rules" {
   type = list
   default = []
 }
+
+variable "db_subnets_ids" {
+  type = list
+  # default = []
+}

@@ -31,7 +31,7 @@ module "db" {
 
   engine            = "mysql"
   engine_version    = "5.7"
-  instance_class    = "db.t3a.large"
+  instance_class    = "db.t3.micro"
   allocated_storage = 5
 
   db_name  = "demodb"
@@ -58,7 +58,7 @@ module "db" {
 
   # DB subnet group
   create_db_subnet_group = true
-  subnet_ids             = [var.subnet_id]
+  subnet_ids             = [var.db_subnets_ids]
 
   # DB parameter group
   family = "mysql5.7"
