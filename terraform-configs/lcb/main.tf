@@ -48,7 +48,7 @@ module "db" {
   # Enhanced Monitoring - see example for details on how to create the role
   # by yourself, in case you don't want to create it automatically
   monitoring_interval    = "30"
-  monitoring_role_name   = "MyRDSMonitoringRole"
+  monitoring_role_name   = var.name
   create_monitoring_role = true
 
   tags = {
@@ -141,7 +141,7 @@ module "ec2_instance" {
   name = var.name
 
   instance_type          = "t2.micro"
-  key_name               = var.name
+  key_name               = "migration"
   monitoring             = true
   vpc_security_group_ids = [module.vote_service_sg.security_group_id]
   # vpc_security_group_ids = var.create_ec2 ? [module.user_service_sg[0].security_group_id] : [] # Wrap the ID in a list
