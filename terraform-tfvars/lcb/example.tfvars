@@ -1,7 +1,7 @@
-create_rds = true
+create_rds = false
 create_ec2 = true
 
-name = "backstage1"
+name = "backstage2"
 subnet_id = "subnet-03c35ea8d4c7d6e16"
 db_subnets_ids = ["subnet-06186e8a453ba359c", "subnet-07841247272960352"]
 vpc_id = "vpc-044ea61c95511720f"
