@@ -58,7 +58,7 @@ module "db" {
 
   # DB subnet group
   create_db_subnet_group = true
-  subnet_ids             = [var.db_subnets_ids]
+  subnet_ids             = var.db_subnets_ids
 
   # DB parameter group
   family = "mysql5.7"
