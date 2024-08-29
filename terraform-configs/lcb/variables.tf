@@ -38,5 +38,5 @@ variable "ingress_rules" {
 
 variable "db_subnets_ids" {
   type = list
-  # default = []
+  default = []
 }
