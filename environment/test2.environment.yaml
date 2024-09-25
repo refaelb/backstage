@@ -1,57 +1,16 @@
-apiVersion: backstage.io/v1alpha1
-kind: Resource
+openapi: "3.0.0"
+info:
+  version: 4.3.0
+  title: refael_demo
+  license:
+    name: MIT
+servers:
+  - url: http://leumi.lcb.net/v7
+paths:
+  /customers:
+    get:
+      summary: List all artists
 metadata:
-  name: test-api22
-  description: The place to be, for great artists
-  annotations:
-    jenkins.io/job-full-name: "default:back"
-spec:
-  type: website
-  lifecycle: production
-  owner: user:default/moticohen_2
-  system: lcb
-
----
-apiVersion: leumi.io/v1alpha1
-kind: Environment
-environment_name: demo
-state: active
-owner_email: demo@leumi.com
-grains:
-  KMS-Key:
-    kind: blueprint
-    spec:
-      source:
-        commit: f91427017aa816dbf5d267076d8c56e7da84a38a
-      inputs:
-        name: 33eeee
-        sha256: 444trrr
-        target: 555yttt
-  lambda:
-    kind: blueprint
-    spec:
-      source:
-        commit: f91427017aa816dbf5d267076d8c56e7da84a38a33333
-      inputs:
-        lambdas:
-          - demo1
-          - demo2
-        config:
-          - path: /
-            method: GET
-            lambda: demo1
-          - path: /
-            method: GET
-            lambda: demo2
-  S3-Webapp:
-    kind: blueprint
-    spec:
-      source:
-        commit: f91427017aa816dbf5d267076d8c56e7da84a38a
-      inputs:
-        name: demo
-        port: '443'
-metadata:
-  name: demo
+  name: leumi-demo
 spec:
   type: service
